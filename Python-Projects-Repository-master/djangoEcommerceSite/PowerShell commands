@@ -1,0 +1,16 @@
+python3 manage.py makemigrations
+
+python3 manage.py migrate
+
+python3 manage.py createsuperuser
+
+python3 manage.py runserver
+
+
+vscode://vscode.github-authentication/did-authenticate?windowid=10&code=7c44cd5007df73829cbf&state=43463471-7b4f-4618-8ce6-c8a680df5081
+
+coverage run manage.py test
+
+coverage report
+
+coverage run --omit='*/venv/*' manage.py test
