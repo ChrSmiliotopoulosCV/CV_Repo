@@ -1,0 +1,386 @@
+1.0.1
+The dataset's first 5 rows are: 
+   EventRecID  ExecProcessID  ProcessId  SysTimeday  SysTimehour  SysTimeminute  ...  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+0    0.000011            0.0   0.567183         0.8     0.826087       0.508475  ...             0             0             0             0             1            0
+1    0.000011            0.0   0.567183         0.8     0.826087       0.508475  ...             0             0             0             0             1            0
+2    0.000011            0.0   0.000156         0.8     0.826087       0.525424  ...             0             0             0             0             1            0
+3    0.000011            0.0   0.000156         0.8     0.826087       0.525424  ...             0             0             0             0             1            0
+4    0.000049            0.0   0.000000         0.2     0.391304       0.762712  ...             1             0             0             0             0            0
+
+[5 rows x 91 columns]
+The dataset's last 5 rows are: 
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  SysTimehour  SysTimeminute  ...  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+1777925    0.000048       0.145527   0.026435         0.1     0.956522       1.000000  ...             0             0             0             0             1            0
+1777926    0.000048       0.145527   0.026435         0.1     0.956522       1.000000  ...             0             0             0             0             1            0
+1777927    0.000048       0.145527   0.203504         0.1     0.956522       1.000000  ...             0             0             0             0             1            0
+1777928    0.000048       0.145527   0.203504         0.1     0.956522       1.000000  ...             0             0             0             0             1            0
+1777929    0.000048       0.145527   0.026435         0.1     0.956522       0.983051  ...             0             0             0             0             1            0
+
+[5 rows x 91 columns]
+Each Label within the full-csv(Evaluated Titles).csv is comprised from the following elements: 
+0    1611637
+1     110746
+2      55547
+Name: Label, dtype: int64
+The subset's (X,y) first 5 rows are: 
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  SysTimehour  SysTimeminute  ...  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+235477     0.000006       0.000000   0.942437    0.800000     0.260870       0.966102  ...             0             0             0             0             1            0
+1508101    0.000009       0.270647   0.000156    0.800000     0.739130       0.169492  ...             0             0             0             0             1            0
+968457     0.000005       0.263208   0.000156    0.766667     0.565217       0.372881  ...             0             0             0             1             0            0
+355682     0.000011       0.000000   0.459409    0.800000     0.826087       0.474576  ...             0             0             0             0             1            0
+548656     0.000006       0.000000   0.000156    0.800000     0.173913       0.474576  ...             0             0             0             0             1            0
+
+[5 rows x 90 columns]
+235477     0
+1508101    0
+968457     0
+355682     0
+548656     0
+Name: Label, dtype: int64
+The subset's (X,y) last 5 rows are: 
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  SysTimehour  SysTimeminute  ...  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+186342     0.000005       0.000000   0.000156    0.766667     0.434783       0.050847  ...             0             0             0             1             0            0
+1445205    0.000008       0.263208   0.000156    0.800000     0.521739       0.525424  ...             0             0             0             0             1            0
+1607999    0.000009       0.263208   0.000156    0.800000     0.739130       0.135593  ...             0             0             0             0             1            0
+263954     0.000004       0.000000   0.000156    0.766667     0.260870       0.983051  ...             0             0             0             1             0            0
+1645858    0.000059       0.000000   0.000000    0.466667     0.521739       0.288136  ...             0             0             1             0             0            0
+
+[5 rows x 90 columns]
+186342     0
+1445205    0
+1607999    0
+263954     0
+1645858    1
+Name: Label, dtype: int64
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 1777930 entries, 235477 to 1645858
+Data columns (total 91 columns):
+ #   Column                     Dtype  
+---  ------                     -----  
+ 0   EventRecID                 float64
+ 1   ExecProcessID              float64
+ 2   ProcessId                  float64
+ 3   SysTimeday                 float64
+ 4   SysTimehour                float64
+ 5   SysTimeminute              float64
+ 6   Label                      int64  
+ 7   EventID1                   int64  
+ 8   EventID2                   int64  
+ 9   EventID3                   int64  
+ 10  EventID4                   int64  
+ 11  EventID5                   int64  
+ 12  EventID6                   int64  
+ 13  EventID7                   int64  
+ 14  EventID8                   int64  
+ 15  EventID10                  int64  
+ 16  EventID11                  int64  
+ 17  EventID12                  int64  
+ 18  EventID13                  int64  
+ 19  EventID15                  int64  
+ 20  EventID16                  int64  
+ 21  EventID17                  int64  
+ 22  EventID18                  int64  
+ 23  EventID22                  int64  
+ 24  EventID23                  int64  
+ 25  EventID255                 int64  
+ 26  CompSTA1                   int64  
+ 27  CompSTA2                   int64  
+ 28  CompSTA3                   int64  
+ 29  CompSTA3.1                 int64  
+ 30  CompSTA4                   int64  
+ 31  CompSTA5                   int64  
+ 32  CompSTA6                   int64  
+ 33  CompSTA8                   int64  
+ 34  Init_True                  int64  
+ 35  SrcIpv6_False              int64  
+ 36  SrcIpv6_True               int64  
+ 37  DstPortName_0              int64  
+ 38  DstPortName_bootps         int64  
+ 39  DstPortName_dhcpv6-server  int64  
+ 40  DstPortName_domain         int64  
+ 41  DstPortName_epmap          int64  
+ 42  DstPortName_http           int64  
+ 43  DstPortName_https          int64  
+ 44  DstPortName_kerberos       int64  
+ 45  DstPortName_kpasswd        int64  
+ 46  DstPortName_ldap           int64  
+ 47  DstPortName_llmnr          int64  
+ 48  DstPortName_microsoft-ds   int64  
+ 49  DstPortName_ms-wbt-server  int64  
+ 50  DstPortName_msft-gc        int64  
+ 51  DstPortName_netbios-dgm    int64  
+ 52  DstPortName_netbios-ns     int64  
+ 53  DstPortName_ntp            int64  
+ 54  DstPortName_ssdp           int64  
+ 55  DstPortName_ws-discovery   int64  
+ 56  DstPortName_wsd            int64  
+ 57  SysTimeYear_2020           int64  
+ 58  SysTimeYear_2021           int64  
+ 59  SysTimeYear_2022           int64  
+ 60  SysTimeYear_2023           int64  
+ 61  SysTimeMonth_1             int64  
+ 62  SysTimeMonth_2             int64  
+ 63  SysTimeMonth_3             int64  
+ 64  SysTimeMonth_6             int64  
+ 65  SysTimeMonth_9             int64  
+ 66  SysTimeMonth_10            int64  
+ 67  SysTimeMonth_11            int64  
+ 68  SysTimeMonth_12            int64  
+ 69  SysTimeWeek_1              int64  
+ 70  SysTimeWeek_2              int64  
+ 71  SysTimeWeek_5              int64  
+ 72  SysTimeWeek_10             int64  
+ 73  SysTimeWeek_25             int64  
+ 74  SysTimeWeek_37             int64  
+ 75  SysTimeWeek_42             int64  
+ 76  SysTimeWeek_45             int64  
+ 77  SysTimeWeek_46             int64  
+ 78  SysTimeWeek_47             int64  
+ 79  SysTimeWeek_48             int64  
+ 80  SysTimeWeek_49             int64  
+ 81  SysTimeWeek_50             int64  
+ 82  SysTimeWeek_51             int64  
+ 83  SysTimeWeek_52             int64  
+ 84  SysTimeDoW_0               int64  
+ 85  SysTimeDoW_1               int64  
+ 86  SysTimeDoW_2               int64  
+ 87  SysTimeDoW_3               int64  
+ 88  SysTimeDoW_4               int64  
+ 89  SysTimeDoW_5               int64  
+ 90  SysTimeDoW6                int64  
+dtypes: float64(6), int64(85)
+memory usage: 1.2 GB
+None
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 1777930 entries, 235477 to 1645858
+Data columns (total 90 columns):
+ #   Column                     Dtype  
+---  ------                     -----  
+ 0   EventRecID                 float64
+ 1   ExecProcessID              float64
+ 2   ProcessId                  float64
+ 3   SysTimeday                 float64
+ 4   SysTimehour                float64
+ 5   SysTimeminute              float64
+ 6   EventID1                   int64  
+ 7   EventID2                   int64  
+ 8   EventID3                   int64  
+ 9   EventID4                   int64  
+ 10  EventID5                   int64  
+ 11  EventID6                   int64  
+ 12  EventID7                   int64  
+ 13  EventID8                   int64  
+ 14  EventID10                  int64  
+ 15  EventID11                  int64  
+ 16  EventID12                  int64  
+ 17  EventID13                  int64  
+ 18  EventID15                  int64  
+ 19  EventID16                  int64  
+ 20  EventID17                  int64  
+ 21  EventID18                  int64  
+ 22  EventID22                  int64  
+ 23  EventID23                  int64  
+ 24  EventID255                 int64  
+ 25  CompSTA1                   int64  
+ 26  CompSTA2                   int64  
+ 27  CompSTA3                   int64  
+ 28  CompSTA3.1                 int64  
+ 29  CompSTA4                   int64  
+ 30  CompSTA5                   int64  
+ 31  CompSTA6                   int64  
+ 32  CompSTA8                   int64  
+ 33  Init_True                  int64  
+ 34  SrcIpv6_False              int64  
+ 35  SrcIpv6_True               int64  
+ 36  DstPortName_0              int64  
+ 37  DstPortName_bootps         int64  
+ 38  DstPortName_dhcpv6-server  int64  
+ 39  DstPortName_domain         int64  
+ 40  DstPortName_epmap          int64  
+ 41  DstPortName_http           int64  
+ 42  DstPortName_https          int64  
+ 43  DstPortName_kerberos       int64  
+ 44  DstPortName_kpasswd        int64  
+ 45  DstPortName_ldap           int64  
+ 46  DstPortName_llmnr          int64  
+ 47  DstPortName_microsoft-ds   int64  
+ 48  DstPortName_ms-wbt-server  int64  
+ 49  DstPortName_msft-gc        int64  
+ 50  DstPortName_netbios-dgm    int64  
+ 51  DstPortName_netbios-ns     int64  
+ 52  DstPortName_ntp            int64  
+ 53  DstPortName_ssdp           int64  
+ 54  DstPortName_ws-discovery   int64  
+ 55  DstPortName_wsd            int64  
+ 56  SysTimeYear_2020           int64  
+ 57  SysTimeYear_2021           int64  
+ 58  SysTimeYear_2022           int64  
+ 59  SysTimeYear_2023           int64  
+ 60  SysTimeMonth_1             int64  
+ 61  SysTimeMonth_2             int64  
+ 62  SysTimeMonth_3             int64  
+ 63  SysTimeMonth_6             int64  
+ 64  SysTimeMonth_9             int64  
+ 65  SysTimeMonth_10            int64  
+ 66  SysTimeMonth_11            int64  
+ 67  SysTimeMonth_12            int64  
+ 68  SysTimeWeek_1              int64  
+ 69  SysTimeWeek_2              int64  
+ 70  SysTimeWeek_5              int64  
+ 71  SysTimeWeek_10             int64  
+ 72  SysTimeWeek_25             int64  
+ 73  SysTimeWeek_37             int64  
+ 74  SysTimeWeek_42             int64  
+ 75  SysTimeWeek_45             int64  
+ 76  SysTimeWeek_46             int64  
+ 77  SysTimeWeek_47             int64  
+ 78  SysTimeWeek_48             int64  
+ 79  SysTimeWeek_49             int64  
+ 80  SysTimeWeek_50             int64  
+ 81  SysTimeWeek_51             int64  
+ 82  SysTimeWeek_52             int64  
+ 83  SysTimeDoW_0               int64  
+ 84  SysTimeDoW_1               int64  
+ 85  SysTimeDoW_2               int64  
+ 86  SysTimeDoW_3               int64  
+ 87  SysTimeDoW_4               int64  
+ 88  SysTimeDoW_5               int64  
+ 89  SysTimeDoW6                int64  
+dtypes: float64(6), int64(84)
+memory usage: 1.2 GB
+None
+<class 'pandas.core.series.Series'>
+Int64Index: 1777930 entries, 235477 to 1645858
+Series name: Label
+Non-Null Count    Dtype
+--------------    -----
+1777930 non-null  int64
+dtypes: int64(1)
+memory usage: 27.1 MB
+None
+The length of the X_train set is:  1333447
+The length of the X_test set is:  444483
+The length of the y_train set is:  1333447
+The length of the y_test set is:  444483
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  SysTimehour  SysTimeminute  ...  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6  Label
+1079817    0.000010       0.270647   0.000156    0.800000     0.739130       0.169492  ...             0             0             0             1            0      0
+161478     0.000005       0.000000   0.000156    0.766667     0.565217       0.542373  ...             0             0             1             0            0      0
+447497     0.000009       0.000000   0.000156    0.800000     0.695652       0.186441  ...             0             0             0             1            0      0
+1110022    0.000003       0.263208   0.000156    0.766667     0.260870       0.322034  ...             0             0             1             0            0      0
+167410     0.000006       0.000000   0.293133    0.800000     0.304348       0.067797  ...             0             0             0             1            0      0
+...             ...            ...        ...         ...          ...            ...  ...           ...           ...           ...           ...          ...    ...
+1544284    0.000010       0.270647   0.000156    0.800000     0.739130       0.186441  ...             0             0             0             1            0      0
+110927     0.000007       0.000000   0.000156    0.800000     0.347826       0.525424  ...             0             0             0             1            0      0
+726280     0.000008       0.000000   0.000156    0.800000     0.521739       0.661017  ...             0             0             0             1            0      0
+753710     0.000004       0.000000   0.000156    0.766667     0.260870       0.457627  ...             0             0             1             0            0      0
+140721     0.000011       0.000000   0.000156    0.800000     0.826087       0.254237  ...             0             0             0             1            0      0
+
+[444483 rows x 91 columns]
+444483
+Index(['EventRecID', 'ExecProcessID', 'ProcessId', 'SysTimeday', 'SysTimehour',
+       'SysTimeminute', 'EventID1', 'EventID2', 'EventID3', 'EventID4',
+       'EventID5', 'EventID6', 'EventID7', 'EventID8', 'EventID10',
+       'EventID11', 'EventID12', 'EventID13', 'EventID15', 'EventID16',
+       'EventID17', 'EventID18', 'EventID22', 'EventID23', 'EventID255',
+       'CompSTA1', 'CompSTA2', 'CompSTA3', 'CompSTA3.1', 'CompSTA4',
+       'CompSTA5', 'CompSTA6', 'CompSTA8', 'Init_True', 'SrcIpv6_False',
+       'SrcIpv6_True', 'DstPortName_0', 'DstPortName_bootps',
+       'DstPortName_dhcpv6-server', 'DstPortName_domain', 'DstPortName_epmap',
+       'DstPortName_http', 'DstPortName_https', 'DstPortName_kerberos',
+       'DstPortName_kpasswd', 'DstPortName_ldap', 'DstPortName_llmnr',
+       'DstPortName_microsoft-ds', 'DstPortName_ms-wbt-server',
+       'DstPortName_msft-gc', 'DstPortName_netbios-dgm',
+       'DstPortName_netbios-ns', 'DstPortName_ntp', 'DstPortName_ssdp',
+       'DstPortName_ws-discovery', 'DstPortName_wsd', 'SysTimeYear_2020',
+       'SysTimeYear_2021', 'SysTimeYear_2022', 'SysTimeYear_2023',
+       'SysTimeMonth_1', 'SysTimeMonth_2', 'SysTimeMonth_3', 'SysTimeMonth_6',
+       'SysTimeMonth_9', 'SysTimeMonth_10', 'SysTimeMonth_11',
+       'SysTimeMonth_12', 'SysTimeWeek_1', 'SysTimeWeek_2', 'SysTimeWeek_5',
+       'SysTimeWeek_10', 'SysTimeWeek_25', 'SysTimeWeek_37', 'SysTimeWeek_42',
+       'SysTimeWeek_45', 'SysTimeWeek_46', 'SysTimeWeek_47', 'SysTimeWeek_48',
+       'SysTimeWeek_49', 'SysTimeWeek_50', 'SysTimeWeek_51', 'SysTimeWeek_52',
+       'SysTimeDoW_0', 'SysTimeDoW_1', 'SysTimeDoW_2', 'SysTimeDoW_3',
+       'SysTimeDoW_4', 'SysTimeDoW_5', 'SysTimeDoW6', 'Label'],
+      dtype='object')
+0    403039
+1     27570
+2     13874
+Name: Label, dtype: int64
+Initialization complete
+Iteration 0, inertia 5473396.938389177
+Iteration 1, inertia 3479609.2584966538
+Iteration 2, inertia 3412166.870790642
+Iteration 3, inertia 3411842.877914376
+Converged at iteration 3: center shift 1.3894937858170446e-07 within tolerance 3.379796735182424e-05.
+Initialization complete
+Iteration 0, inertia 5177849.7301118625
+Iteration 1, inertia 3480834.740213822
+Iteration 2, inertia 3380205.2664673943
+Iteration 3, inertia 3329281.3722674586
+Iteration 4, inertia 3317273.500672179
+Converged at iteration 4: strict convergence.
+Initialization complete
+Iteration 0, inertia 5693335.756845937
+Iteration 1, inertia 3751443.645599582
+Iteration 2, inertia 3371416.9945991957
+Iteration 3, inertia 3330930.77953794
+Converged at iteration 3: center shift 4.1773264172314905e-09 within tolerance 3.379796735182424e-05.
+Initialization complete
+Iteration 0, inertia 5822340.076932777
+Iteration 1, inertia 3655901.6429118826
+Iteration 2, inertia 3329801.2121546823
+Iteration 3, inertia 3317273.5006721793
+Converged at iteration 3: strict convergence.
+Initialization complete
+Iteration 0, inertia 5054015.130180819
+Iteration 1, inertia 3446843.753822677
+Iteration 2, inertia 3349810.7731260248
+Converged at iteration 2: center shift 5.819939765980349e-06 within tolerance 3.379796735182424e-05.
+Initialization complete
+Iteration 0, inertia 6343742.855740787
+Iteration 1, inertia 4031302.2952013463
+Iteration 2, inertia 3433481.235532299
+Iteration 3, inertia 3317273.500672179
+Converged at iteration 3: strict convergence.
+Initialization complete
+Iteration 0, inertia 5545797.319658987
+Iteration 1, inertia 4208192.122521742
+Iteration 2, inertia 4174062.960794105
+Iteration 3, inertia 4167305.538558167
+Converged at iteration 3: center shift 1.0136442256496685e-08 within tolerance 3.379796735182424e-05.
+Initialization complete
+Iteration 0, inertia 5219953.307980969
+Iteration 1, inertia 3481380.1269050036
+Iteration 2, inertia 3367442.525056457
+Converged at iteration 2: center shift 2.853302529378902e-05 within tolerance 3.379796735182424e-05.
+Initialization complete
+Iteration 0, inertia 5970047.525297654
+Iteration 1, inertia 4248855.394735014
+Iteration 2, inertia 4018387.9696015567
+Iteration 3, inertia 3383248.5868554707
+Iteration 4, inertia 3383027.967929539
+Iteration 5, inertia 3378228.808921671
+Iteration 6, inertia 3358837.567319582
+Iteration 7, inertia 3354200.8418979174
+Converged at iteration 7: center shift 6.361476672050676e-10 within tolerance 3.379796735182424e-05.
+Initialization complete
+Iteration 0, inertia 5664681.887085881
+Iteration 1, inertia 3574663.984220599
+Iteration 2, inertia 3468612.3673449117
+Iteration 3, inertia 3349809.053281964
+Converged at iteration 3: strict convergence.
+[2 2 2 ... 2 2 1]
+[[842561  77240 691836]
+ [     0 110733     13]
+ [     0  55547      0]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.5228    0.6866   1611637
+           1     0.4547    0.9999    0.6251    110746
+           2     0.0000    0.0000    0.0000     55547
+
+    accuracy                         0.5362   1777930
+   macro avg     0.4849    0.5076    0.4373   1777930
+weighted avg     0.9348    0.5362    0.6613   1777930
+
+Accuracy: 0.5361819644192966

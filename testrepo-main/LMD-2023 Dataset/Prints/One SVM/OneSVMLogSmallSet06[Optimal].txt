@@ -1,0 +1,62 @@
+1.4.0
+Each Label within the full-csv(Evaluated Titles).csv is comprised from the following elements: 
+Label
+0    1611637
+1     166293
+Name: count, dtype: int64
+The length of the X_train set is:  1333447
+The length of the X_test set is:  444483
+The length of the y_train set is:  1333447
+The length of the y_test set is:  444483
+The subset's (y_test) counted values are: 
+Label
+0    402886
+1     41597
+Name: count, dtype: int64
+-- Epoch 1
+Norm: 3.50, NNZs: 83, Bias: -7.982830, T: 1333447, Avg. loss: 0.645388
+Total training time: 0.28 seconds.
+-- Epoch 2
+Norm: 3.57, NNZs: 83, Bias: -8.177040, T: 2666894, Avg. loss: 0.691520
+Total training time: 0.57 seconds.
+-- Epoch 3
+Norm: 3.61, NNZs: 83, Bias: -8.283129, T: 4000341, Avg. loss: 0.706025
+Total training time: 0.86 seconds.
+-- Epoch 4
+Norm: 3.63, NNZs: 83, Bias: -8.355262, T: 5333788, Avg. loss: 0.714980
+Total training time: 1.15 seconds.
+-- Epoch 5
+Norm: 3.65, NNZs: 83, Bias: -8.409504, T: 6667235, Avg. loss: 0.721434
+Total training time: 1.43 seconds.
+-- Epoch 6
+Norm: 3.67, NNZs: 83, Bias: -8.452780, T: 8000682, Avg. loss: 0.726345
+Total training time: 1.73 seconds.
+Convergence after 6 epochs took 1.73 seconds
+[-1  1 -1 ... -1  1  1]
+761393     0
+1680456    1
+989218     0
+106122     0
+1619208    1
+          ..
+438965     0
+344050     0
+941850     0
+1108113    0
+1080614    0
+Name: Label, Length: 1777930, dtype: int64
+[[252478 150408]
+ [    85  41512]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.6267    0.7705    402886
+           1     0.2166    1.0000    0.3561     41597
+
+    accuracy                         0.6616    444483
+   macro avg     0.6083    0.8133    0.5633    444483
+weighted avg     0.9267    0.6686    0.7317    444483
+
+Accuracy: 0.6616113552149351
+ROC AUC score: 0.8133367751671688
+The time duration of the Multiclass experiment was: 
+--- 2667.17557406425476 seconds ---

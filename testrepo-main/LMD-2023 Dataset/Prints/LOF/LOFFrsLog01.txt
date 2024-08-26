@@ -1,0 +1,48 @@
+1.0.1
+Each Label within the full-csv(Evaluated Titles).csv is comprised from the following elements: 
+0    1611637
+1     166293
+Name: Label, dtype: int64
+The length of the X_train set is:  1333447
+The length of the X_test set is:  444483
+The length of the y_train set is:  1333447
+The length of the y_test set is:  444483
+The subset's (y_test) counted values are: 
+0    402845
+1     41638
+Name: Label, dtype: int64
+[1 1 1 ... 1 1 1]
+1516071    0
+1161147    0
+265414     0
+1063279    0
+1707104    1
+          ..
+1024541    0
+785954     0
+659432     0
+606219     0
+33592      0
+Name: Label, Length: 1777930, dtype: int64
+[[398457   4388]
+ [ 40252   1386]]
+              precision    recall  f1-score   support
+
+           0     0.9082    0.9891    0.9470    402845
+<<<<<<< HEAD
+           1     0.6400    0.6333    0.6585     41638
+
+    accuracy                         0.8996    444483
+   macro avg     0.7741    0.8112    0.8027    444483
+=======
+           1     0.2400    0.0333    0.0585     41638
+
+    accuracy                         0.8996    444483
+   macro avg     0.5741    0.5112    0.5027    444483
+>>>>>>> 5f09b4c60f9b8ddc0ec730dfa9bc4ab69e255646
+weighted avg     0.8457    0.8996    0.8637    444483
+
+Accuracy: 0.8995687124141981
+ROC AUC score: 0.5111971872428743
+The time duration of the Multiclass experiment was: 
+--- 37369.981181144714 seconds ---

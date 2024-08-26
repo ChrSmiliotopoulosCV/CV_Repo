@@ -1,0 +1,126 @@
+1.2.1
+1.5.2
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  Label  EventID1  EventID2  ...  SysTimeDoW_0  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+0          0.000011       0.000000   0.567183         0.8      0         1         0  ...             0             0             0             0             0             1            0
+1          0.000011       0.000000   0.567183         0.8      0         1         0  ...             0             0             0             0             0             1            0
+2          0.000011       0.000000   0.000156         0.8      0         0         0  ...             0             0             0             0             0             1            0
+3          0.000011       0.000000   0.000156         0.8      0         0         0  ...             0             0             0             0             0             1            0
+4          0.000049       0.000000   0.000000         0.2      0         0         0  ...             0             1             0             0             0             0            0
+...             ...            ...        ...         ...    ...       ...       ...  ...           ...           ...           ...           ...           ...           ...          ...
+1777925    0.000048       0.145527   0.026435         0.1      1         0         0  ...             0             0             0             0             0             1            0
+1777926    0.000048       0.145527   0.026435         0.1      1         0         0  ...             0             0             0             0             0             1            0
+1777927    0.000048       0.145527   0.203504         0.1      1         0         0  ...             0             0             0             0             0             1            0
+1777928    0.000048       0.145527   0.203504         0.1      1         0         0  ...             0             0             0             0             0             1            0
+1777929    0.000048       0.145527   0.026435         0.1      1         0         0  ...             0             0             0             0             0             1            0
+
+[1777930 rows x 89 columns]
+Each Label within the oheMinMaxPreProcessedDataset.csv (full-csv(Evaluated Titles).csv) is comprised from the following elements:
+0    1611637
+1     166293
+Name: Label, dtype: int64
+EventRecID                   0
+ExecProcessID                0
+ProcessId                    0
+SysTimeday                   0
+Label                        0
+EventID1                     0
+EventID2                     0
+EventID3                     0
+EventID4                     0
+EventID5                     0
+EventID6                     0
+EventID7                     0
+EventID8                     0
+EventID10                    0
+EventID11                    0
+EventID12                    0
+EventID13                    0
+EventID15                    0
+EventID16                    0
+EventID17                    0
+EventID18                    0
+EventID22                    0
+EventID23                    0
+EventID255                   0
+CompSTA1                     0
+CompSTA2                     0
+CompSTA3                     0
+CompSTA32                    0
+CompSTA4                     0
+CompSTA5                     0
+CompSTA6                     0
+CompSTA8                     0
+Init_True                    0
+SrcIpv6_False                0
+SrcIpv6_True                 0
+DstPortName_0                0
+DstPortName_bootps           0
+DstPortName_dhcpv6-server    0
+DstPortName_domain           0
+DstPortName_epmap            0
+DstPortName_http             0
+DstPortName_https            0
+DstPortName_kerberos         0
+DstPortName_kpasswd          0
+DstPortName_ldap             0
+DstPortName_llmnr            0
+DstPortName_microsoft-ds     0
+DstPortName_ms-wbt-server    0
+DstPortName_msft-gc          0
+DstPortName_netbios-dgm      0
+DstPortName_netbios-ns       0
+DstPortName_ntp              0
+DstPortName_ssdp             0
+DstPortName_ws-discovery     0
+DstPortName_wsd              0
+SysTimeYear_2020             0
+SysTimeYear_2021             0
+SysTimeYear_2022             0
+SysTimeYear_2023             0
+SysTimeMonth_1               0
+SysTimeMonth_2               0
+SysTimeMonth_3               0
+SysTimeMonth_6               0
+SysTimeMonth_9               0
+SysTimeMonth_10              0
+SysTimeMonth_11              0
+SysTimeMonth_12              0
+SysTimeWeek_1                0
+SysTimeWeek_2                0
+SysTimeWeek_5                0
+SysTimeWeek_10               0
+SysTimeWeek_25               0
+SysTimeWeek_37               0
+SysTimeWeek_42               0
+SysTimeWeek_45               0
+SysTimeWeek_46               0
+SysTimeWeek_47               0
+SysTimeWeek_48               0
+SysTimeWeek_49               0
+SysTimeWeek_50               0
+SysTimeWeek_51               0
+SysTimeWeek_52               0
+SysTimeDoW_0                 0
+SysTimeDoW_1                 0
+SysTimeDoW_2                 0
+SysTimeDoW_3                 0
+SysTimeDoW_4                 0
+SysTimeDoW_5                 0
+SysTimeDoW6                  0
+dtype: int64
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  Label  EventID1  EventID2  ...  SysTimeDoW_0  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+1660725    0.000058       0.000000   0.000000    0.466667      1         0         0  ...             0             0             0             1             0             0            0
+448693     0.000006       0.000000   0.000156    0.800000      0         0         0  ...             0             0             0             0             0             1            0
+94703      0.000003       0.000000   0.000156    0.766667      0         0         0  ...             0             0             0             0             1             0            0
+1158659    0.000006       0.263208   0.000156    0.800000      0         0         0  ...             0             0             0             0             0             1            0
+93823      0.000005       0.000000   0.000156    0.766667      0         0         0  ...             0             0             0             0             1             0            0
+
+[5 rows x 89 columns]
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  Label  EventID1  EventID2  ...  SysTimeDoW_0  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+448693     0.000006       0.000000   0.000156    0.800000      0         0         0  ...             0             0             0             0             0             1            0
+94703      0.000003       0.000000   0.000156    0.766667      0         0         0  ...             0             0             0             0             1             0            0
+1158659    0.000006       0.263208   0.000156    0.800000      0         0         0  ...             0             0             0             0             0             1            0
+93823      0.000005       0.000000   0.000156    0.766667      0         0         0  ...             0             0             0             0             1             0            0
+784751     0.000037       0.140759   0.132802    0.966667      0         0         0  ...             0             1             0             0             0             0            0
+
+[5 rows x 89 columns]

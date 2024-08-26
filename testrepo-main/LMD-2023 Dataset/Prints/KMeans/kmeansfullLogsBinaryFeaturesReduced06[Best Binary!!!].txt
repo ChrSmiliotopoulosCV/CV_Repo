@@ -1,0 +1,1064 @@
+1.0.1
+The dataset's first 5 rows are: 
+   EventRecID  ExecProcessID  ProcessId  SysTimeday  Label  EventID1  EventID2  ...  SysTimeDoW_0  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+0    0.000011            0.0   0.567183         0.8      0         1         0  ...             0             0             0             0             0             1            0
+1    0.000011            0.0   0.567183         0.8      0         1         0  ...             0             0             0             0             0             1            0
+2    0.000011            0.0   0.000156         0.8      0         0         0  ...             0             0             0             0             0             1            0
+3    0.000011            0.0   0.000156         0.8      0         0         0  ...             0             0             0             0             0             1            0
+4    0.000049            0.0   0.000000         0.2      0         0         0  ...             0             1             0             0             0             0            0
+
+[5 rows x 89 columns]
+The dataset's last 5 rows are: 
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  Label  EventID1  ...  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+1777925    0.000048       0.145527   0.026435         0.1      1         0  ...             0             0             0             0             1            0
+1777926    0.000048       0.145527   0.026435         0.1      1         0  ...             0             0             0             0             1            0
+1777927    0.000048       0.145527   0.203504         0.1      1         0  ...             0             0             0             0             1            0
+1777928    0.000048       0.145527   0.203504         0.1      1         0  ...             0             0             0             0             1            0
+1777929    0.000048       0.145527   0.026435         0.1      1         0  ...             0             0             0             0             1            0
+
+[5 rows x 89 columns]
+Each Label within the full-csv(Evaluated Titles).csv is comprised from the following elements: 
+0    1611637
+1     166293
+Name: Label, dtype: int64
+The subset's (X,y) first 5 rows are: 
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  EventID1  EventID2  ...  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+883018     0.000009       0.263208   0.000156    0.800000         0         0  ...             0             0             0             0             1            0
+1363154    0.000009       0.263208   0.000156    0.800000         0         0  ...             0             0             0             0             1            0
+610212     0.000004       0.000000   0.000156    0.766667         0         0  ...             0             0             0             1             0            0
+1032350    0.000005       0.263208   0.000156    0.766667         0         0  ...             0             0             0             1             0            0
+45012      0.000010       0.000000   0.207884    0.000000         1         0  ...             0             0             1             0             0            0
+
+[5 rows x 88 columns]
+883018     0
+1363154    0
+610212     0
+1032350    0
+45012      0
+Name: Label, dtype: int64
+The subset's (X,y) last 5 rows are: 
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  EventID1  EventID2  ...  SysTimeDoW_1  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6
+909858     0.000005       0.263208   0.000156    0.766667         0         0  ...             0             0             0             1             0            0
+843886     0.000006       0.263208   0.000156    0.800000         0         0  ...             0             0             0             0             1            0
+1721220    0.000054       0.000000   0.000000    0.466667         0         0  ...             0             0             1             0             0            0
+224959     0.000009       0.000000   0.000156    0.800000         0         0  ...             0             0             0             0             1            0
+1072170    0.000007       0.263208   0.000156    0.800000         0         0  ...             0             0             0             0             1            0
+
+[5 rows x 88 columns]
+909858     0
+843886     0
+1721220    1
+224959     0
+1072170    0
+Name: Label, dtype: int64
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 1777930 entries, 883018 to 1072170
+Data columns (total 89 columns):
+ #   Column                     Dtype  
+---  ------                     -----  
+ 0   EventRecID                 float64
+ 1   ExecProcessID              float64
+ 2   ProcessId                  float64
+ 3   SysTimeday                 float64
+ 4   Label                      int64  
+ 5   EventID1                   int64  
+ 6   EventID2                   int64  
+ 7   EventID3                   int64  
+ 8   EventID4                   int64  
+ 9   EventID5                   int64  
+ 10  EventID6                   int64  
+ 11  EventID7                   int64  
+ 12  EventID8                   int64  
+ 13  EventID10                  int64  
+ 14  EventID11                  int64  
+ 15  EventID12                  int64  
+ 16  EventID13                  int64  
+ 17  EventID15                  int64  
+ 18  EventID16                  int64  
+ 19  EventID17                  int64  
+ 20  EventID18                  int64  
+ 21  EventID22                  int64  
+ 22  EventID23                  int64  
+ 23  EventID255                 int64  
+ 24  CompSTA1                   int64  
+ 25  CompSTA2                   int64  
+ 26  CompSTA3                   int64  
+ 27  CompSTA32                  int64  
+ 28  CompSTA4                   int64  
+ 29  CompSTA5                   int64  
+ 30  CompSTA6                   int64  
+ 31  CompSTA8                   int64  
+ 32  Init_True                  int64  
+ 33  SrcIpv6_False              int64  
+ 34  SrcIpv6_True               int64  
+ 35  DstPortName_0              int64  
+ 36  DstPortName_bootps         int64  
+ 37  DstPortName_dhcpv6-server  int64  
+ 38  DstPortName_domain         int64  
+ 39  DstPortName_epmap          int64  
+ 40  DstPortName_http           int64  
+ 41  DstPortName_https          int64  
+ 42  DstPortName_kerberos       int64  
+ 43  DstPortName_kpasswd        int64  
+ 44  DstPortName_ldap           int64  
+ 45  DstPortName_llmnr          int64  
+ 46  DstPortName_microsoft-ds   int64  
+ 47  DstPortName_ms-wbt-server  int64  
+ 48  DstPortName_msft-gc        int64  
+ 49  DstPortName_netbios-dgm    int64  
+ 50  DstPortName_netbios-ns     int64  
+ 51  DstPortName_ntp            int64  
+ 52  DstPortName_ssdp           int64  
+ 53  DstPortName_ws-discovery   int64  
+ 54  DstPortName_wsd            int64  
+ 55  SysTimeYear_2020           int64  
+ 56  SysTimeYear_2021           int64  
+ 57  SysTimeYear_2022           int64  
+ 58  SysTimeYear_2023           int64  
+ 59  SysTimeMonth_1             int64  
+ 60  SysTimeMonth_2             int64  
+ 61  SysTimeMonth_3             int64  
+ 62  SysTimeMonth_6             int64  
+ 63  SysTimeMonth_9             int64  
+ 64  SysTimeMonth_10            int64  
+ 65  SysTimeMonth_11            int64  
+ 66  SysTimeMonth_12            int64  
+ 67  SysTimeWeek_1              int64  
+ 68  SysTimeWeek_2              int64  
+ 69  SysTimeWeek_5              int64  
+ 70  SysTimeWeek_10             int64  
+ 71  SysTimeWeek_25             int64  
+ 72  SysTimeWeek_37             int64  
+ 73  SysTimeWeek_42             int64  
+ 74  SysTimeWeek_45             int64  
+ 75  SysTimeWeek_46             int64  
+ 76  SysTimeWeek_47             int64  
+ 77  SysTimeWeek_48             int64  
+ 78  SysTimeWeek_49             int64  
+ 79  SysTimeWeek_50             int64  
+ 80  SysTimeWeek_51             int64  
+ 81  SysTimeWeek_52             int64  
+ 82  SysTimeDoW_0               int64  
+ 83  SysTimeDoW_1               int64  
+ 84  SysTimeDoW_2               int64  
+ 85  SysTimeDoW_3               int64  
+ 86  SysTimeDoW_4               int64  
+ 87  SysTimeDoW_5               int64  
+ 88  SysTimeDoW6                int64  
+dtypes: float64(4), int64(85)
+memory usage: 1.2 GB
+None
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 1777930 entries, 883018 to 1072170
+Data columns (total 88 columns):
+ #   Column                     Dtype  
+---  ------                     -----  
+ 0   EventRecID                 float64
+ 1   ExecProcessID              float64
+ 2   ProcessId                  float64
+ 3   SysTimeday                 float64
+ 4   EventID1                   int64  
+ 5   EventID2                   int64  
+ 6   EventID3                   int64  
+ 7   EventID4                   int64  
+ 8   EventID5                   int64  
+ 9   EventID6                   int64  
+ 10  EventID7                   int64  
+ 11  EventID8                   int64  
+ 12  EventID10                  int64  
+ 13  EventID11                  int64  
+ 14  EventID12                  int64  
+ 15  EventID13                  int64  
+ 16  EventID15                  int64  
+ 17  EventID16                  int64  
+ 18  EventID17                  int64  
+ 19  EventID18                  int64  
+ 20  EventID22                  int64  
+ 21  EventID23                  int64  
+ 22  EventID255                 int64  
+ 23  CompSTA1                   int64  
+ 24  CompSTA2                   int64  
+ 25  CompSTA3                   int64  
+ 26  CompSTA32                  int64  
+ 27  CompSTA4                   int64  
+ 28  CompSTA5                   int64  
+ 29  CompSTA6                   int64  
+ 30  CompSTA8                   int64  
+ 31  Init_True                  int64  
+ 32  SrcIpv6_False              int64  
+ 33  SrcIpv6_True               int64  
+ 34  DstPortName_0              int64  
+ 35  DstPortName_bootps         int64  
+ 36  DstPortName_dhcpv6-server  int64  
+ 37  DstPortName_domain         int64  
+ 38  DstPortName_epmap          int64  
+ 39  DstPortName_http           int64  
+ 40  DstPortName_https          int64  
+ 41  DstPortName_kerberos       int64  
+ 42  DstPortName_kpasswd        int64  
+ 43  DstPortName_ldap           int64  
+ 44  DstPortName_llmnr          int64  
+ 45  DstPortName_microsoft-ds   int64  
+ 46  DstPortName_ms-wbt-server  int64  
+ 47  DstPortName_msft-gc        int64  
+ 48  DstPortName_netbios-dgm    int64  
+ 49  DstPortName_netbios-ns     int64  
+ 50  DstPortName_ntp            int64  
+ 51  DstPortName_ssdp           int64  
+ 52  DstPortName_ws-discovery   int64  
+ 53  DstPortName_wsd            int64  
+ 54  SysTimeYear_2020           int64  
+ 55  SysTimeYear_2021           int64  
+ 56  SysTimeYear_2022           int64  
+ 57  SysTimeYear_2023           int64  
+ 58  SysTimeMonth_1             int64  
+ 59  SysTimeMonth_2             int64  
+ 60  SysTimeMonth_3             int64  
+ 61  SysTimeMonth_6             int64  
+ 62  SysTimeMonth_9             int64  
+ 63  SysTimeMonth_10            int64  
+ 64  SysTimeMonth_11            int64  
+ 65  SysTimeMonth_12            int64  
+ 66  SysTimeWeek_1              int64  
+ 67  SysTimeWeek_2              int64  
+ 68  SysTimeWeek_5              int64  
+ 69  SysTimeWeek_10             int64  
+ 70  SysTimeWeek_25             int64  
+ 71  SysTimeWeek_37             int64  
+ 72  SysTimeWeek_42             int64  
+ 73  SysTimeWeek_45             int64  
+ 74  SysTimeWeek_46             int64  
+ 75  SysTimeWeek_47             int64  
+ 76  SysTimeWeek_48             int64  
+ 77  SysTimeWeek_49             int64  
+ 78  SysTimeWeek_50             int64  
+ 79  SysTimeWeek_51             int64  
+ 80  SysTimeWeek_52             int64  
+ 81  SysTimeDoW_0               int64  
+ 82  SysTimeDoW_1               int64  
+ 83  SysTimeDoW_2               int64  
+ 84  SysTimeDoW_3               int64  
+ 85  SysTimeDoW_4               int64  
+ 86  SysTimeDoW_5               int64  
+ 87  SysTimeDoW6                int64  
+dtypes: float64(4), int64(84)
+memory usage: 1.2 GB
+None
+<class 'pandas.core.series.Series'>
+Int64Index: 1777930 entries, 883018 to 1072170
+Series name: Label
+Non-Null Count    Dtype
+--------------    -----
+1777930 non-null  int64
+dtypes: int64(1)
+memory usage: 27.1 MB
+None
+The length of the X_train set is:  1333447
+The length of the X_test set is:  444483
+The length of the y_train set is:  1333447
+The length of the y_test set is:  444483
+         EventRecID  ExecProcessID  ProcessId  SysTimeday  EventID1  EventID2  ...  SysTimeDoW_2  SysTimeDoW_3  SysTimeDoW_4  SysTimeDoW_5  SysTimeDoW6  Label
+1202259    0.000009       0.270647   0.000156    0.800000         0         0  ...             0             0             0             1            0      0
+17579      0.000042       0.000000   0.080870    0.533333         0         0  ...             0             0             0             1            0      0
+697565     0.000002       0.000000   0.000156    0.733333         0         0  ...             0             1             0             0            0      0
+70442      0.000032       0.000000   0.129517    0.966667         1         0  ...             0             0             0             0            0      0
+1605147    0.000006       0.263208   0.000156    0.800000         0         0  ...             0             0             0             1            0      0
+...             ...            ...        ...         ...       ...       ...  ...           ...           ...           ...           ...          ...    ...
+437651     0.000010       0.000000   0.000156    0.800000         0         0  ...             0             0             0             1            0      0
+1497340    0.000004       0.263208   0.000156    0.766667         0         0  ...             0             0             1             0            0      0
+1482516    0.000006       0.263208   0.000156    0.800000         0         0  ...             0             0             0             1            0      0
+451183     0.000011       0.000000   0.000156    0.800000         0         0  ...             0             0             0             1            0      0
+573624     0.000011       0.000000   0.000156    0.800000         0         0  ...             0             0             0             1            0      0
+
+[444483 rows x 89 columns]
+444483
+Index(['EventRecID', 'ExecProcessID', 'ProcessId', 'SysTimeday', 'EventID1',
+       'EventID2', 'EventID3', 'EventID4', 'EventID5', 'EventID6', 'EventID7',
+       'EventID8', 'EventID10', 'EventID11', 'EventID12', 'EventID13',
+       'EventID15', 'EventID16', 'EventID17', 'EventID18', 'EventID22',
+       'EventID23', 'EventID255', 'CompSTA1', 'CompSTA2', 'CompSTA3',
+       'CompSTA32', 'CompSTA4', 'CompSTA5', 'CompSTA6', 'CompSTA8',
+       'Init_True', 'SrcIpv6_False', 'SrcIpv6_True', 'DstPortName_0',
+       'DstPortName_bootps', 'DstPortName_dhcpv6-server', 'DstPortName_domain',
+       'DstPortName_epmap', 'DstPortName_http', 'DstPortName_https',
+       'DstPortName_kerberos', 'DstPortName_kpasswd', 'DstPortName_ldap',
+       'DstPortName_llmnr', 'DstPortName_microsoft-ds',
+       'DstPortName_ms-wbt-server', 'DstPortName_msft-gc',
+       'DstPortName_netbios-dgm', 'DstPortName_netbios-ns', 'DstPortName_ntp',
+       'DstPortName_ssdp', 'DstPortName_ws-discovery', 'DstPortName_wsd',
+       'SysTimeYear_2020', 'SysTimeYear_2021', 'SysTimeYear_2022',
+       'SysTimeYear_2023', 'SysTimeMonth_1', 'SysTimeMonth_2',
+       'SysTimeMonth_3', 'SysTimeMonth_6', 'SysTimeMonth_9', 'SysTimeMonth_10',
+       'SysTimeMonth_11', 'SysTimeMonth_12', 'SysTimeWeek_1', 'SysTimeWeek_2',
+       'SysTimeWeek_5', 'SysTimeWeek_10', 'SysTimeWeek_25', 'SysTimeWeek_37',
+       'SysTimeWeek_42', 'SysTimeWeek_45', 'SysTimeWeek_46', 'SysTimeWeek_47',
+       'SysTimeWeek_48', 'SysTimeWeek_49', 'SysTimeWeek_50', 'SysTimeWeek_51',
+       'SysTimeWeek_52', 'SysTimeDoW_0', 'SysTimeDoW_1', 'SysTimeDoW_2',
+       'SysTimeDoW_3', 'SysTimeDoW_4', 'SysTimeDoW_5', 'SysTimeDoW6', 'Label'],
+      dtype='object')
+0    403033
+1     41450
+Name: Label, dtype: int64
+Initialization complete
+Iteration 0, inertia 3630058.089026478
+Iteration 1, inertia 2440024.3509651353
+Iteration 2, inertia 2344068.0945646283
+Iteration 3, inertia 2340533.283488586
+Converged at iteration 3: center shift 2.3138719211462716e-09 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3720864.1288636164
+Iteration 1, inertia 2432966.6642635926
+Iteration 2, inertia 2383138.3887193603
+Iteration 3, inertia 2382875.869564859
+Converged at iteration 3: center shift 1.0722830404872049e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3892011.8001721716
+Iteration 1, inertia 2509076.4047920634
+Iteration 2, inertia 2459981.814245949
+Converged at iteration 2: center shift 4.2528735420448996e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4074526.9320011614
+Iteration 1, inertia 2600332.9687088123
+Iteration 2, inertia 2343980.320496114
+Iteration 3, inertia 2340533.2830383326
+Converged at iteration 3: center shift 2.729571375129314e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3876775.1717249914
+Iteration 1, inertia 2435057.806417802
+Iteration 2, inertia 2340535.980672519
+Converged at iteration 2: center shift 1.2730536130060365e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3520572.469342622
+Iteration 1, inertia 2407633.3596006054
+Iteration 2, inertia 2328201.111347144
+Converged at iteration 2: center shift 6.868512515308035e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3654666.169197664
+Iteration 1, inertia 2572315.5860241274
+Iteration 2, inertia 2478729.977760255
+Iteration 3, inertia 2470725.3303631605
+Converged at iteration 3: center shift 7.302356358801882e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3690030.170304271
+Iteration 1, inertia 2567216.144281183
+Iteration 2, inertia 2534035.0355985602
+Iteration 3, inertia 2522952.6127801305
+Iteration 4, inertia 2515078.152214741
+Iteration 5, inertia 2502924.709302187
+Iteration 6, inertia 2484972.534764869
+Iteration 7, inertia 2481253.8676548577
+Iteration 8, inertia 2476591.041041227
+Converged at iteration 8: strict convergence.
+Initialization complete
+Iteration 0, inertia 3848195.4845609125
+Iteration 1, inertia 2534169.502423043
+Iteration 2, inertia 2422843.892150588
+Iteration 3, inertia 2376122.8263498256
+Iteration 4, inertia 2342523.00034367
+Iteration 5, inertia 2339335.488472377
+Converged at iteration 5: center shift 3.1121110342663133e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3631492.7873681327
+Iteration 1, inertia 2440024.3509651353
+Iteration 2, inertia 2344068.0945646283
+Iteration 3, inertia 2340533.283488586
+Converged at iteration 3: center shift 2.3138719211435675e-09 within tolerance 3.2972985137063534e-05.
+[1 2 1 ... 1 1 0]
+[[252883 130755  19395]
+ [     2      1  41447]
+ [     0      0      0]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.6274    0.7711    403033
+           1     0.0000    0.0000    0.0000     41450
+
+   micro avg     0.6592    0.5689    0.6107    444483
+   macro avg     0.5000    0.3137    0.3855    444483
+weighted avg     0.9067    0.5689    0.6992    444483
+
+Accuracy: 0.5689396444858409
+Initialization complete
+Iteration 0, inertia 4059965.8990300857
+Iteration 1, inertia 2364083.572729234
+Iteration 2, inertia 2340534.3588577965
+Converged at iteration 2: center shift 4.910651209174145e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3659153.3863302344
+Iteration 1, inertia 2572318.42679408
+Iteration 2, inertia 2478729.977760255
+Iteration 3, inertia 2470725.3303631605
+Converged at iteration 3: center shift 7.302356358801594e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3602340.1300710794
+Iteration 1, inertia 2515851.815353788
+Iteration 2, inertia 2463737.0627141627
+Iteration 3, inertia 2463495.907223812
+Converged at iteration 3: center shift 2.7753347877824565e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3673214.3762793187
+Iteration 1, inertia 2416217.4686780125
+Iteration 2, inertia 2304005.5065117544
+Converged at iteration 2: center shift 2.423545368167609e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3618009.7105756146
+Iteration 1, inertia 2357916.162109046
+Iteration 2, inertia 2314544.7350432384
+Converged at iteration 2: center shift 1.8054965103684314e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3972228.279472201
+Iteration 1, inertia 2366601.932028066
+Iteration 2, inertia 2345591.951636657
+Iteration 3, inertia 2304008.8960584044
+Converged at iteration 3: center shift 7.145457612212393e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3705168.1808368405
+Iteration 1, inertia 2575124.739507454
+Iteration 2, inertia 2522536.7035767925
+Iteration 3, inertia 2522265.443974984
+Converged at iteration 3: center shift 6.088702269879688e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3775799.7367997444
+Iteration 1, inertia 2426311.950941542
+Iteration 2, inertia 2383134.7183179515
+Iteration 3, inertia 2382875.869564859
+Converged at iteration 3: center shift 1.0722830404875378e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3581762.9581278483
+Iteration 1, inertia 2547616.341473998
+Iteration 2, inertia 2459984.665243309
+Converged at iteration 2: center shift 1.37988795039814e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3665592.4387686644
+Iteration 1, inertia 2384303.4956766577
+Iteration 2, inertia 2304006.7047214736
+Converged at iteration 2: center shift 8.27302152529458e-06 within tolerance 3.2972985137063534e-05.
+[2 1 2 ... 2 2 0]
+[[210745  19395 172893]
+ [     0  41447      3]
+ [     0      0      0]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.5229    0.6867    403033
+           1     0.6812    0.9999    0.8104     41450
+
+   micro avg     0.9286    0.5674    0.7044    444483
+   macro avg     0.8406    0.7614    0.7485    444483
+weighted avg     0.9703    0.5674    0.6982    444483
+
+Accuracy: 0.5673827795438746
+Initialization complete
+Iteration 0, inertia 3599605.7297147796
+Iteration 1, inertia 2512918.3011354795
+Iteration 2, inertia 2463594.940475201
+Iteration 3, inertia 2463495.907223812
+Converged at iteration 3: center shift 2.775334787786105e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4054696.3606402576
+Iteration 1, inertia 2577703.0535930768
+Iteration 2, inertia 2571932.1559776794
+Converged at iteration 2: center shift 1.182824332653814e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3666860.6642441615
+Iteration 1, inertia 2440590.2010882283
+Iteration 2, inertia 2348783.596211908
+Iteration 3, inertia 2348181.2526459605
+Iteration 4, inertia 2343291.7693414246
+Iteration 5, inertia 2340533.2830383326
+Converged at iteration 5: center shift 2.7295713751547745e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3702794.000431073
+Iteration 1, inertia 2567216.361740243
+Iteration 2, inertia 2534178.4316034913
+Iteration 3, inertia 2523114.625867452
+Iteration 4, inertia 2515338.4644711837
+Iteration 5, inertia 2503324.3823615275
+Iteration 6, inertia 2485097.6850000843
+Iteration 7, inertia 2481253.8676548577
+Iteration 8, inertia 2476591.041041227
+Converged at iteration 8: strict convergence.
+Initialization complete
+Iteration 0, inertia 3657257.538863224
+Iteration 1, inertia 2616938.2747412967
+Iteration 2, inertia 2351099.3480595048
+Iteration 3, inertia 2340533.2842318537
+Converged at iteration 3: center shift 5.681694989419896e-09 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3581050.780195103
+Iteration 1, inertia 2547616.341473998
+Iteration 2, inertia 2459984.665243309
+Converged at iteration 2: center shift 1.3798879503980992e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3928042.8289999026
+Iteration 1, inertia 2571762.420731327
+Iteration 2, inertia 2381753.0194848534
+Iteration 3, inertia 2314538.429658665
+Converged at iteration 3: center shift 2.1423256481864863e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4407171.762297358
+Iteration 1, inertia 2690014.734757973
+Iteration 2, inertia 2464892.1584313037
+Converged at iteration 2: center shift 2.885695010210684e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3672445.7964802445
+Iteration 1, inertia 2361458.7308910917
+Iteration 2, inertia 2314544.143898035
+Converged at iteration 2: center shift 1.6816326173453345e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4082276.7981285043
+Iteration 1, inertia 2666187.82115711
+Iteration 2, inertia 2314538.4553610734
+Converged at iteration 2: center shift 7.330841228797974e-08 within tolerance 3.2972985137063534e-05.
+[0 1 0 ... 0 0 2]
+[[130755  61532 210746]
+ [     5  41442      3]
+ [     0      0      0]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.3244    0.4899    403033
+           1     0.4025    0.9998    0.5739     41450
+
+   micro avg     0.7367    0.3874    0.5078    444483
+   macro avg     0.7012    0.6621    0.5319    444483
+weighted avg     0.9442    0.3874    0.4977    444483
+
+Accuracy: 0.38740964221353796
+Initialization complete
+Iteration 0, inertia 3677405.5421631406
+Iteration 1, inertia 2384811.790991503
+Iteration 2, inertia 2304005.9060766906
+Converged at iteration 2: center shift 4.792643015480348e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4386492.455876061
+Iteration 1, inertia 2558757.6701855017
+Iteration 2, inertia 2434666.534578806
+Iteration 3, inertia 2369799.897314839
+Iteration 4, inertia 2339359.0180952353
+Iteration 5, inertia 2339335.041672637
+Converged at iteration 5: strict convergence.
+Initialization complete
+Iteration 0, inertia 3668579.890864388
+Iteration 1, inertia 2440592.971483243
+Iteration 2, inertia 2348783.596211908
+Iteration 3, inertia 2348181.2526459605
+Iteration 4, inertia 2343291.7693414246
+Iteration 5, inertia 2340533.2830383326
+Converged at iteration 5: center shift 2.72957137514875e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4133445.4749847036
+Iteration 1, inertia 2357683.3819756936
+Iteration 2, inertia 2340533.353067657
+Converged at iteration 2: center shift 3.4449774043166663e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3851451.8710632618
+Iteration 1, inertia 2376733.2487631645
+Iteration 2, inertia 2328199.643835346
+Converged at iteration 2: center shift 1.338679976233368e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3842299.292167861
+Iteration 1, inertia 2544800.6052120524
+Iteration 2, inertia 2386713.986054231
+Iteration 3, inertia 2386635.9412126783
+Converged at iteration 3: center shift 5.4914370722764045e-09 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3698479.6535868123
+Iteration 1, inertia 2515958.163554374
+Iteration 2, inertia 2463734.3565814
+Iteration 3, inertia 2463495.907223812
+Converged at iteration 3: center shift 2.775334787786771e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3653935.4028531206
+Iteration 1, inertia 2432797.8668766655
+Iteration 2, inertia 2386912.9787205136
+Iteration 3, inertia 2386635.9977458618
+Converged at iteration 3: center shift 1.60164897750044e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3652090.71597997
+Iteration 1, inertia 2358895.5055766716
+Iteration 2, inertia 2314543.643175144
+Converged at iteration 2: center shift 1.5368910994905603e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3831958.4925364396
+Iteration 1, inertia 2443903.9054596815
+Iteration 2, inertia 2383178.630271618
+Iteration 3, inertia 2382875.890206565
+Converged at iteration 3: center shift 1.6836569070461632e-07 within tolerance 3.2972985137063534e-05.
+[1 2 1 ... 1 1 0]
+[[210745 172893  19395]
+ [     0      3  41447]
+ [     0      0      0]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.5229    0.6867    403033
+           1     0.0000    0.0001    0.0000     41450
+
+   micro avg     0.5493    0.4741    0.5090    444483
+   macro avg     0.5000    0.2615    0.3434    444483
+weighted avg     0.9067    0.4741    0.6227    444483
+
+Accuracy: 0.47414186819293425
+Initialization complete
+Iteration 0, inertia 3606441.937774255
+Iteration 1, inertia 2359493.832063195
+Iteration 2, inertia 2314547.869726778
+Converged at iteration 2: center shift 2.6604996775228256e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3756407.694324934
+Iteration 1, inertia 2428882.365425453
+Iteration 2, inertia 2383161.7710671173
+Iteration 3, inertia 2382875.890206564
+Converged at iteration 3: center shift 1.6836569070469893e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4134622.3430201407
+Iteration 1, inertia 2444843.3152323123
+Iteration 2, inertia 2386819.8950394876
+Iteration 3, inertia 2386330.598323574
+Converged at iteration 3: center shift 2.0688399034559874e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3630058.170599542
+Iteration 1, inertia 2440024.3509651353
+Iteration 2, inertia 2344068.0945646283
+Iteration 3, inertia 2340533.283488586
+Converged at iteration 3: center shift 2.3138719211515407e-09 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3575197.995208057
+Iteration 1, inertia 2568546.0929040774
+Iteration 2, inertia 2420451.2586086406
+Iteration 3, inertia 2328199.6134043573
+Converged at iteration 3: strict convergence.
+Initialization complete
+Iteration 0, inertia 3952902.172276196
+Iteration 1, inertia 2983071.3619665615
+Iteration 2, inertia 2909066.993750784
+Iteration 3, inertia 2901106.698358206
+Converged at iteration 3: center shift 3.401923682843854e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4053267.027606375
+Iteration 1, inertia 3145880.8480646
+Iteration 2, inertia 3119981.6015036115
+Iteration 3, inertia 3090253.6126000304
+Iteration 4, inertia 2983054.3878445276
+Iteration 5, inertia 2817075.685466351
+Iteration 6, inertia 2810729.201929418
+Iteration 7, inertia 2807340.100741183
+Converged at iteration 7: strict convergence.
+Initialization complete
+Iteration 0, inertia 3941152.098666588
+Iteration 1, inertia 2519133.4929566146
+Iteration 2, inertia 2399594.1933584283
+Iteration 3, inertia 2356029.964297471
+Iteration 4, inertia 2339348.0026152893
+Iteration 5, inertia 2339335.041672637
+Converged at iteration 5: strict convergence.
+Initialization complete
+Iteration 0, inertia 4362816.278428824
+Iteration 1, inertia 2495683.6648068395
+Iteration 2, inertia 2464893.5134189436
+Converged at iteration 2: center shift 6.324779456497905e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3966703.1382939043
+Iteration 1, inertia 2347554.811188599
+Iteration 2, inertia 2304004.815615801
+Converged at iteration 2: strict convergence.
+[2 1 2 ... 2 2 0]
+[[210745  19395 172893]
+ [     0  41447      3]
+ [     0      0      0]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.5229    0.6867    403033
+           1     0.6812    0.9999    0.8104     41450
+
+   micro avg     0.9286    0.5674    0.7044    444483
+   macro avg     0.8406    0.7614    0.7485    444483
+weighted avg     0.9703    0.5674    0.6982    444483
+
+Accuracy: 0.5673827795438746
+Initialization complete
+Iteration 0, inertia 4085508.309048973
+Iteration 1, inertia 2580624.6847514845
+Iteration 2, inertia 2483393.90816661
+Iteration 3, inertia 2483371.938020454
+Converged at iteration 3: center shift 6.136770347220246e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4083960.6179202953
+Iteration 1, inertia 3087661.2827523164
+Iteration 2, inertia 2692396.695527837
+Iteration 3, inertia 2374887.525529133
+Iteration 4, inertia 2374572.7671571444
+Iteration 5, inertia 2365961.1996768676
+Iteration 6, inertia 2342861.9001495223
+Iteration 7, inertia 2328199.6134043573
+Converged at iteration 7: strict convergence.
+Initialization complete
+Iteration 0, inertia 3836044.5724399723
+Iteration 1, inertia 2361652.5590141877
+Iteration 2, inertia 2312735.5518728998
+Iteration 3, inertia 2304004.815615801
+Converged at iteration 3: strict convergence.
+Initialization complete
+Iteration 0, inertia 3828902.7014814266
+Iteration 1, inertia 2363694.9247880294
+Iteration 2, inertia 2328199.6224501943
+Converged at iteration 2: center shift 4.0480680520955485e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3697551.634496613
+Iteration 1, inertia 2432063.91059245
+Iteration 2, inertia 2343979.493917724
+Iteration 3, inertia 2340533.2830383326
+Converged at iteration 3: center shift 2.7295713751843075e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3746054.310641927
+Iteration 1, inertia 2583721.7230445375
+Iteration 2, inertia 2413540.3599819415
+Iteration 3, inertia 2358314.46013975
+Iteration 4, inertia 2339350.09426066
+Iteration 5, inertia 2339335.041672637
+Converged at iteration 5: strict convergence.
+Initialization complete
+Iteration 0, inertia 3670897.9178812993
+Iteration 1, inertia 2369443.0398049355
+Iteration 2, inertia 2318805.5105702756
+Iteration 3, inertia 2314538.4393364484
+Converged at iteration 3: center shift 2.8616198730334267e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3680607.339623657
+Iteration 1, inertia 2436325.6121326927
+Iteration 2, inertia 2328223.76465594
+Iteration 3, inertia 2328199.6134043573
+Converged at iteration 3: strict convergence.
+Initialization complete
+Iteration 0, inertia 3699498.113006878
+Iteration 1, inertia 2434666.332122747
+Iteration 2, inertia 2343981.7579182913
+Iteration 3, inertia 2340533.2830383326
+Converged at iteration 3: center shift 2.7295713751511153e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4100622.9046409354
+Iteration 1, inertia 2907230.7903870414
+Iteration 2, inertia 2818264.3752325648
+Iteration 3, inertia 2810729.201929418
+Iteration 4, inertia 2807340.100741183
+Converged at iteration 4: strict convergence.
+[0 2 0 ... 0 0 1]
+[[172893 210745  19395]
+ [     3      0  41447]
+ [     0      0      0]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.4290    0.6004    403033
+           1     0.0000    0.0000    0.0000     41450
+
+   micro avg     0.4507    0.3890    0.4176    444483
+   macro avg     0.5000    0.2145    0.3002    444483
+weighted avg     0.9067    0.3890    0.5444    444483
+
+Accuracy: 0.388975506374822
+Initialization complete
+Iteration 0, inertia 4113234.3907561116
+Iteration 1, inertia 2366215.606502677
+Iteration 2, inertia 2314548.288436124
+Converged at iteration 2: center shift 2.775379625842285e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3961164.387511387
+Iteration 1, inertia 2353027.8114355044
+Iteration 2, inertia 2304005.0299740024
+Converged at iteration 2: center shift 3.755188359866391e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3940739.5512035578
+Iteration 1, inertia 2883830.6883114646
+Iteration 2, inertia 2855245.5843678573
+Converged at iteration 2: center shift 1.6514469361182814e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3800628.286600741
+Iteration 1, inertia 2567233.1153822867
+Iteration 2, inertia 2522403.2332888376
+Iteration 3, inertia 2522265.4420221406
+Converged at iteration 3: center shift 5.552862752600586e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4173225.5948430337
+Iteration 1, inertia 2533937.665533311
+Iteration 2, inertia 2415498.313748186
+Iteration 3, inertia 2368796.1681388672
+Iteration 4, inertia 2339356.9819287187
+Iteration 5, inertia 2339335.041672637
+Converged at iteration 5: strict convergence.
+Initialization complete
+Iteration 0, inertia 3541766.903893126
+Iteration 1, inertia 2359077.040788448
+Iteration 2, inertia 2314547.8697267775
+Converged at iteration 2: center shift 2.660499677522807e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3991296.8400028558
+Iteration 1, inertia 2586739.9456023243
+Iteration 2, inertia 2541374.1787413023
+Iteration 3, inertia 2541329.6497865394
+Converged at iteration 3: center shift 4.160790121212908e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3697551.3820170625
+Iteration 1, inertia 2432063.91059245
+Iteration 2, inertia 2343979.493917724
+Iteration 3, inertia 2340533.2830383326
+Converged at iteration 3: center shift 2.7295713751569645e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3845671.551463997
+Iteration 1, inertia 2882494.9949610997
+Iteration 2, inertia 2807340.198098103
+Converged at iteration 2: center shift 2.3250398855043265e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3942276.8295438047
+Iteration 1, inertia 2928047.0488526793
+Iteration 2, inertia 2825431.9391531753
+Iteration 3, inertia 2546026.6039874326
+Iteration 4, inertia 2363584.07175051
+Iteration 5, inertia 2358637.920518111
+Iteration 6, inertia 2319622.9821612067
+Iteration 7, inertia 2304004.815615801
+Converged at iteration 7: strict convergence.
+[2 1 2 ... 2 2 0]
+[[210745  19395 172893]
+ [     0  41447      3]
+ [     0      0      0]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.5229    0.6867    403033
+           1     0.6812    0.9999    0.8104     41450
+
+   micro avg     0.9286    0.5674    0.7044    444483
+   macro avg     0.8406    0.7614    0.7485    444483
+weighted avg     0.9703    0.5674    0.6982    444483
+
+Accuracy: 0.5673827795438746
+Initialization complete
+Iteration 0, inertia 4143793.512734192
+Iteration 1, inertia 2855773.854600313
+Iteration 2, inertia 2817368.8466124414
+Iteration 3, inertia 2569460.45751551
+Iteration 4, inertia 2340534.1177678057
+Converged at iteration 4: center shift 3.6722503816648547e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3628920.433403089
+Iteration 1, inertia 2440024.3509651353
+Iteration 2, inertia 2344068.0945646283
+Iteration 3, inertia 2340533.283488586
+Converged at iteration 3: center shift 2.3138719211457186e-09 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3628920.728009264
+Iteration 1, inertia 2440024.3509651353
+Iteration 2, inertia 2344068.0945646283
+Iteration 3, inertia 2340533.283488586
+Converged at iteration 3: center shift 2.313871921146337e-09 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4484949.154434465
+Iteration 1, inertia 2535302.9282755484
+Iteration 2, inertia 2387820.0078772632
+Iteration 3, inertia 2350437.997489063
+Converged at iteration 3: center shift 5.777397308786208e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4368897.573165239
+Iteration 1, inertia 2625868.1771648526
+Iteration 2, inertia 2551041.909386333
+Converged at iteration 2: center shift 7.759612551285168e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4101485.7161218286
+Iteration 1, inertia 2444686.034982306
+Iteration 2, inertia 2328201.03883065
+Converged at iteration 2: center shift 6.153204770156663e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4308623.836697576
+Iteration 1, inertia 2870353.8882215186
+Iteration 2, inertia 2507231.690875689
+Iteration 3, inertia 2497941.828906216
+Converged at iteration 3: center shift 2.4401165576122643e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3724932.597292962
+Iteration 1, inertia 2528792.9382864684
+Iteration 2, inertia 2402167.8062898265
+Iteration 3, inertia 2358928.2192570767
+Iteration 4, inertia 2339350.318663437
+Iteration 5, inertia 2339335.041672637
+Converged at iteration 5: strict convergence.
+Initialization complete
+Iteration 0, inertia 4203637.082585609
+Iteration 1, inertia 2623235.9339887304
+Iteration 2, inertia 2476943.31041928
+Iteration 3, inertia 2368453.58686387
+Iteration 4, inertia 2339354.970227184
+Iteration 5, inertia 2339335.041672637
+Converged at iteration 5: strict convergence.
+Initialization complete
+Iteration 0, inertia 3574540.3978662575
+Iteration 1, inertia 2358866.6462520882
+Iteration 2, inertia 2314547.8157090205
+Converged at iteration 2: center shift 2.6441055324199425e-05 within tolerance 3.2972985137063534e-05.
+[0 2 0 ... 0 0 1]
+[[130755 210746  61532]
+ [     5      3  41442]
+ [     0      0      0]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.3244    0.4899    403033
+           1     0.0000    0.0001    0.0000     41450
+
+   micro avg     0.3829    0.2942    0.3327    444483
+   macro avg     0.5000    0.1622    0.2450    444483
+weighted avg     0.9067    0.2942    0.4442    444483
+
+Accuracy: 0.2941799798867448
+Initialization complete
+Iteration 0, inertia 3795424.74208702
+Iteration 1, inertia 2501622.0193242705
+Iteration 2, inertia 2415875.644260722
+Iteration 3, inertia 2328199.613404358
+Converged at iteration 3: strict convergence.
+Initialization complete
+Iteration 0, inertia 4025970.699714288
+Iteration 1, inertia 2586597.0063786134
+Iteration 2, inertia 2577487.676852329
+Iteration 3, inertia 2572347.8995466065
+Iteration 4, inertia 2571931.7816398903
+Converged at iteration 4: center shift 7.572006366985162e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3656901.8142470075
+Iteration 1, inertia 2572315.586024127
+Iteration 2, inertia 2478729.9777602553
+Iteration 3, inertia 2470725.3303631605
+Converged at iteration 3: center shift 7.3023563588020615e-06 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3575197.92350302
+Iteration 1, inertia 2568546.0929040774
+Iteration 2, inertia 2420451.2586086406
+Iteration 3, inertia 2328199.6134043573
+Converged at iteration 3: strict convergence.
+Initialization complete
+Iteration 0, inertia 3632203.011900218
+Iteration 1, inertia 2362937.025003658
+Iteration 2, inertia 2314546.752032173
+Converged at iteration 2: center shift 2.3026384806754897e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3878934.35855731
+Iteration 1, inertia 2429463.512532885
+Iteration 2, inertia 2343981.7579182913
+Iteration 3, inertia 2340533.2830383326
+Converged at iteration 3: center shift 2.7295713751390493e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3588887.3286635927
+Iteration 1, inertia 2371684.1823966787
+Iteration 2, inertia 2320810.5813010116
+Iteration 3, inertia 2314538.439720584
+Converged at iteration 3: center shift 2.9833148540766805e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3563969.705625559
+Iteration 1, inertia 2361078.949207565
+Iteration 2, inertia 2314544.076351362
+Converged at iteration 2: center shift 1.661557101468508e-05 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3716868.8526028544
+Iteration 1, inertia 2567216.337017187
+Iteration 2, inertia 2534166.1735893544
+Iteration 3, inertia 2523087.4250875735
+Iteration 4, inertia 2515291.3923774287
+Iteration 5, inertia 2503224.4548516828
+Iteration 6, inertia 2485097.6850000843
+Iteration 7, inertia 2481253.8676548577
+Iteration 8, inertia 2476591.041041227
+Converged at iteration 8: strict convergence.
+Initialization complete
+Iteration 0, inertia 3799471.0900988434
+Iteration 1, inertia 2508372.612124296
+Iteration 2, inertia 2463590.3536522347
+Iteration 3, inertia 2463495.907223812
+Converged at iteration 3: center shift 2.7753347877828936e-08 within tolerance 3.2972985137063534e-05.
+[2 0 2 ... 2 2 1]
+[[ 61532 210746 130755]
+ [ 41442      3      5]
+ [     0      0      0]]
+              precision    recall  f1-score   support
+
+           0     0.5975    0.1527    0.2432    403033
+           1     0.0000    0.0001    0.0000     41450
+
+   micro avg     0.1961    0.1384    0.1623    444483
+   macro avg     0.2988    0.0764    0.1216    444483
+weighted avg     0.5418    0.1384    0.2205    444483
+
+Accuracy: 0.13844174017903946
+Initialization complete
+Iteration 0, inertia 3826815.9493481573
+Iteration 1, inertia 2537611.4354937044
+Iteration 2, inertia 2422959.179805086
+Iteration 3, inertia 2370914.613204037
+Iteration 4, inertia 2339388.021534436
+Iteration 5, inertia 2339335.041672637
+Converged at iteration 5: strict convergence.
+Initialization complete
+Iteration 0, inertia 3706550.1739151273
+Iteration 1, inertia 2424189.126455865
+Iteration 2, inertia 2343980.447913787
+Iteration 3, inertia 2340533.2830383326
+Converged at iteration 3: center shift 2.7295713751304135e-10 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3863522.1091754194
+Iteration 1, inertia 2578850.580414499
+Iteration 2, inertia 2522554.946144696
+Iteration 3, inertia 2522265.443974984
+Converged at iteration 3: center shift 6.088702269879105e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3815992.777109263
+Iteration 1, inertia 2578901.5280324523
+Iteration 2, inertia 2522554.946144696
+Iteration 3, inertia 2522265.443974984
+Converged at iteration 3: center shift 6.08870226988384e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3630513.3983393773
+Iteration 1, inertia 2515979.5210925173
+Iteration 2, inertia 2463737.0627141627
+Iteration 3, inertia 2463495.907223812
+Converged at iteration 3: center shift 2.7753347877833506e-08 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3653718.0538141597
+Iteration 1, inertia 2616938.2747412967
+Iteration 2, inertia 2351099.3480595048
+Iteration 3, inertia 2340533.2842318537
+Converged at iteration 3: center shift 5.681694989417796e-09 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3654666.236798706
+Iteration 1, inertia 2616938.2747412967
+Iteration 2, inertia 2351099.3480595048
+Iteration 3, inertia 2340533.2842318537
+Converged at iteration 3: center shift 5.681694989431484e-09 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4084553.119843603
+Iteration 1, inertia 3101934.9499045312
+Iteration 2, inertia 2950357.6188119384
+Iteration 3, inertia 2950118.56372771
+Converged at iteration 3: center shift 7.715198332500909e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 4324504.019702677
+Iteration 1, inertia 3048114.7417340144
+Iteration 2, inertia 3027438.8658989575
+Iteration 3, inertia 3026167.2671574703
+Iteration 4, inertia 3025519.549790498
+Iteration 5, inertia 3024533.031563909
+Iteration 6, inertia 3020197.784284401
+Iteration 7, inertia 3019950.19647446
+Converged at iteration 7: center shift 4.1043504431468437e-07 within tolerance 3.2972985137063534e-05.
+Initialization complete
+Iteration 0, inertia 3944050.7201103247
+Iteration 1, inertia 2397179.9356765067
+Iteration 2, inertia 2345152.388428359
+Iteration 3, inertia 2340533.2829785645
+Converged at iteration 3: strict convergence.
+[0 1 0 ... 0 0 0]
+[[341501  19395  42137]
+ [     1  41447      2]
+ [     0      0      0]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.8473    0.9174    403033
+           1     0.6812    0.9999    0.8104     41450
+
+   micro avg     0.9518    0.8616    0.9044    444483
+   macro avg     0.8406    0.9236    0.8639    444483
+weighted avg     0.9703    0.8616    0.9074    444483
+
+Accuracy: 0.8615582598209606

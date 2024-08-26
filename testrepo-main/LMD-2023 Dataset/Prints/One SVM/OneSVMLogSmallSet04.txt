@@ -1,0 +1,92 @@
+1.4.0
+Each Label within the full-csv(Evaluated Titles).csv is comprised from the following elements: 
+Label
+0    1611637
+1     166293
+Name: count, dtype: int64
+The length of the X_train set is:  1333447
+The length of the X_test set is:  444483
+The length of the y_train set is:  1333447
+The length of the y_test set is:  444483
+The subset's (y_test) counted values are: 
+Label
+0    403029
+1     41454
+Name: count, dtype: int64
+-- Epoch 1
+Norm: 4.34, NNZs: 83, Bias: -10.510863, T: 1333447, Avg. loss: 1.004371
+Total training time: 0.33 seconds.
+-- Epoch 2
+Norm: 4.38, NNZs: 83, Bias: -10.559726, T: 2666894, Avg. loss: 0.991333
+Total training time: 0.67 seconds.
+-- Epoch 3
+Norm: 4.33, NNZs: 83, Bias: -10.425875, T: 4000341, Avg. loss: 0.989025
+Total training time: 1.00 seconds.
+-- Epoch 4
+Norm: 4.39, NNZs: 83, Bias: -10.476309, T: 5333788, Avg. loss: 0.987897
+Total training time: 1.33 seconds.
+-- Epoch 5
+Norm: 4.35, NNZs: 83, Bias: -10.534294, T: 6667235, Avg. loss: 0.987081
+Total training time: 1.65 seconds.
+-- Epoch 6
+Norm: 4.35, NNZs: 83, Bias: -10.528919, T: 8000682, Avg. loss: 0.986562
+Total training time: 1.99 seconds.
+-- Epoch 7
+Norm: 4.35, NNZs: 83, Bias: -10.419934, T: 9334129, Avg. loss: 0.986422
+Total training time: 2.32 seconds.
+-- Epoch 8
+Norm: 4.37, NNZs: 83, Bias: -10.435310, T: 10667576, Avg. loss: 0.986018
+Total training time: 2.65 seconds.
+-- Epoch 9
+Norm: 4.35, NNZs: 83, Bias: -10.552503, T: 12001023, Avg. loss: 0.985733
+Total training time: 2.98 seconds.
+-- Epoch 10
+Norm: 4.38, NNZs: 83, Bias: -10.457658, T: 13334470, Avg. loss: 0.985778
+Total training time: 3.32 seconds.
+-- Epoch 11
+Norm: 4.34, NNZs: 83, Bias: -10.528368, T: 14667917, Avg. loss: 0.985274
+Total training time: 3.65 seconds.
+-- Epoch 12
+Norm: 4.35, NNZs: 83, Bias: -10.425570, T: 16001364, Avg. loss: 0.985556
+Total training time: 3.97 seconds.
+-- Epoch 13
+Norm: 4.39, NNZs: 83, Bias: -10.606987, T: 17334811, Avg. loss: 0.984993
+Total training time: 4.30 seconds.
+-- Epoch 14
+Norm: 4.37, NNZs: 83, Bias: -10.543749, T: 18668258, Avg. loss: 0.985279
+Total training time: 4.63 seconds.
+-- Epoch 15
+Norm: 4.37, NNZs: 83, Bias: -10.551991, T: 20001705, Avg. loss: 0.985043
+Total training time: 4.97 seconds.
+-- Epoch 16
+Norm: 4.36, NNZs: 83, Bias: -10.505659, T: 21335152, Avg. loss: 0.985004
+Total training time: 5.30 seconds.
+Convergence after 16 epochs took 5.30 seconds
+[ 1  1 -1 ...  1  1 -1]
+1055321    0
+782032     0
+655357     0
+843412     0
+365950     0
+          ..
+789763     0
+1440365    0
+541070     0
+845896     0
+790355     0
+Name: Label, Length: 1777930, dtype: int64
+[[215880 187149]
+ [     1  41453]]
+              precision    recall  f1-score   support
+
+           0     1.0000    0.5356    0.6976    403029
+           1     0.1813    1.0000    0.3070     41454
+
+    accuracy                         0.5789    444483
+   macro avg     0.5907    0.7678    0.5023    444483
+weighted avg     0.9236    0.5789    0.6612    444483
+
+Accuracy: 0.5789490261719796
+ROC AUC score: 0.7678098569597787
+The time duration of the Multiclass experiment was: 
+--- 53.37686824798584 seconds ---
