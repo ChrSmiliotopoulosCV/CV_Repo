@@ -1,0 +1,18 @@
+Tasks for 6-11-22:
+- The code from the testIndex.py should be merged with the original code in newDraft(5-9-22).py
+- Especially the following code:
+    max_len = max(len(l) if isinstance(l, list) else 1 for l in my_dict.values())
+    print('The Max length is: ', max_len)
+    for key in my_dict.keys():
+        while len(my_dict[key]) < max_len:
+        #   christos = my_dict[key]
+        #   my_dict[key] = np.repeat('NaN', max_len-1).tolist()
+        my_dict[key].append('OMG')
+
+    print(my_dict)
+
+    for v in my_dict.values():
+        print(len(v)) ,
+should be implemented in each of the "for ch in child:" if loops.
+
+- Pay attention to the finally desired .csv file. 

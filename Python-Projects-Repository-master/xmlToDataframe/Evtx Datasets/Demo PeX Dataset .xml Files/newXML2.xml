@@ -1,0 +1,34 @@
+<Event xmlns='http://schemas.microsoft.com/win/2004/08/events/event'>
+		<System>
+			<EventID>1</EventID>
+		</System>
+		<EventData>
+			<Data Name='ProcessId'>3876</Data>
+			<Data Name='ParentProcessId'>4944</Data>
+			<Data Name='ParentCommandLine'>'cmd'</Data>
+		</EventData>
+		<System>
+			<EventID>1</EventID>
+		</System>
+		<EventData>
+			<Data Name='ProcessId'>3876</Data>
+			<Data Name='ParentProcessId'>4944</Data>
+			<Data Name='ParentCommandLine'>'ggbeera'</Data>
+		</EventData>
+		<System>
+			<EventID>1</EventID>
+		</System>
+		<EventData>
+			<Data Name='ProcessId'>3876</Data>
+			<Data Name='ParentProcessId'>4944</Data>
+			<Data Name='chrisCommandline'>'ggbrigy'</Data>
+		</EventData>
+		<System>
+			<EventID></EventID>
+		</System>
+		<EventData>
+			<Data Name='ProcessId'></Data>
+			<Data Name='ParentProcessId'></Data>
+			<Data Name='chrisCommandline'>'salud'</Data>
+		</EventData>
+	</Event>
