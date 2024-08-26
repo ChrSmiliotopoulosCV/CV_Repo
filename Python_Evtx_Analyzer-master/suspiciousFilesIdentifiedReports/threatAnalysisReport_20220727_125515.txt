@@ -1,0 +1,26 @@
+Python_Evtx_Analyzer (PeX - v1) - EDR Threat Analysis Report of: 
+2022-07-27 12:55:15
+
+The below files were identified as potentially suspicious for Lateral Movement behaviour.
+
+C:\Windows\System32\cmd.exe
+
+C:\Windows\System32\conhost.exe
+
+C:\Windows\System32\cmd.exe
+
+C:\Windows\System32\conhost.exe
+
+whoami
+
+C:\Windows\System32\whoami.exe
+
+Starting Time/Date:
+2022-07-27 12:55:15
+
+Ending Time/Date:
+2022-07-27 12:55:15
+
+There is a 33.333333333333336% possibility of being under an attack involving Lateral Movement (with reference to Sysmon EventIDs 1-4, 6-22).
+In total, 1 out of 18 ''Data Name = CommandLine'' elements were identified.
+In total, 5 out of 18''Data Name = Image'' elements were identified.

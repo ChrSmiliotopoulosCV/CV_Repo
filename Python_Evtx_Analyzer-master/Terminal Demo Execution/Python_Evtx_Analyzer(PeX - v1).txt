@@ -1,0 +1,1039 @@
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:25.676758"/>
+                <EventRecordID>25625</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:25.675</Data>
+                <Data Name="ProcessGuid">{27532e6a-361d-61af-7401-000000001d00}</Data>
+                <Data Name="ProcessId">3868</Data>
+                <Data Name="Image">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="FileVersion">10.0.17763.592 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Windows Command Processor</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">Cmd.Exe</Data>
+                <Data Name="CommandLine">cmd.exe /c &quot;reg.exe save hklm\sam c:\windows\temp\dvtkrw&quot;</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=3656F37A1C6951EC4496FABB8EE957D3A6E3C276D5A3785476B482C9C0D32EA2</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-361d-61af-6f01-000000001d00}</Data>
+                <Data Name="ParentProcessId">2212</Data>
+                <Data Name="ParentImage">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="ParentCommandLine">lazagne.exe  sysadmin</Data>
+        </EventData>
+</Event>
+
+C:\Windows\System32\cmd.exe
+Element found!!!
+1  Lateral Movement events have been found in total!!!
+The instances of ''Data Name = Image'' element in the local tag are  1
+In total,  879 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 884  incidents in total were identified as potentially prone to LM attacks.
+4078 textValues were enumerated in total within this .evtx file.
+There is a  21.677292790583618 % percent possibility of being affected from a Lateral Movement Attack.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:25.686749"/>
+                <EventRecordID>25626</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:25.685</Data>
+                <Data Name="ProcessGuid">{27532e6a-361d-61af-7501-000000001d00}</Data>
+                <Data Name="ProcessId">6128</Data>
+                <Data Name="Image">C:\Windows\System32\reg.exe</Data>
+                <Data Name="FileVersion">10.0.17763.1 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Registry Console Tool</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">reg.exe</Data>
+                <Data Name="CommandLine">reg.exe  save hklm\sam c:\windows\temp\dvtkrw</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=19316D4266D0B776D9B2A05D5903D8CBC8F0EA1520E9C2A7E6D5960B6FA4DCAF</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-361d-61af-7401-000000001d00}</Data>
+                <Data Name="ParentProcessId">3868</Data>
+                <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="ParentCommandLine">cmd.exe /c &quot;reg.exe save hklm\sam c:\windows\temp\dvtkrw&quot;</Data>
+        </EventData>
+</Event>
+
+reg.exe  save hklm\sam c:\windows\temp\dvtkrw
+The instances of ''Data Name = CommandLine'' element in the local tag are  0
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:25.686749"/>
+                <EventRecordID>25626</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:25.685</Data>
+                <Data Name="ProcessGuid">{27532e6a-361d-61af-7501-000000001d00}</Data>
+                <Data Name="ProcessId">6128</Data>
+                <Data Name="Image">C:\Windows\System32\reg.exe</Data>
+                <Data Name="FileVersion">10.0.17763.1 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Registry Console Tool</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">reg.exe</Data>
+                <Data Name="CommandLine">reg.exe  save hklm\sam c:\windows\temp\dvtkrw</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=19316D4266D0B776D9B2A05D5903D8CBC8F0EA1520E9C2A7E6D5960B6FA4DCAF</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-361d-61af-7401-000000001d00}</Data>
+                <Data Name="ParentProcessId">3868</Data>
+                <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="ParentCommandLine">cmd.exe /c &quot;reg.exe save hklm\sam c:\windows\temp\dvtkrw&quot;</Data>
+        </EventData>
+</Event>
+
+C:\Windows\System32\reg.exe
+Element found!!!
+1  Lateral Movement events have been found in total!!!
+The instances of ''Data Name = Image'' element in the local tag are  1
+In total,  880 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 885  incidents in total were identified as potentially prone to LM attacks.
+4080 textValues were enumerated in total within this .evtx file.
+There is a  21.691176470588236 % percent possibility of being affected from a Lateral Movement Attack.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.316721"/>
+                <EventRecordID>25638</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.315</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7601-000000001d00}</Data>
+                <Data Name="ProcessId">5048</Data>
+                <Data Name="Image">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="FileVersion">-</Data>
+                <Data Name="Description">-</Data>
+                <Data Name="Product">-</Data>
+                <Data Name="Company">-</Data>
+                <Data Name="OriginalFileName">-</Data>
+                <Data Name="CommandLine">lazagne.exe  windows</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=ED2F501408A7A6E1A854C29C4B0BC5648A6AA8612432DF829008931B3E34BF56</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-3402-61af-3801-000000001d00}</Data>
+                <Data Name="ParentProcessId">6068</Data>
+                <Data Name="ParentImage">C:\Windows\SysWOW64\cmd.exe</Data>
+                <Data Name="ParentCommandLine">C:\Windows\system32\cmd.exe</Data>
+        </EventData>
+</Event>
+
+lazagne.exe  windows
+The instances of ''Data Name = CommandLine'' element in the local tag are  0
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.316721"/>
+                <EventRecordID>25638</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.315</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7601-000000001d00}</Data>
+                <Data Name="ProcessId">5048</Data>
+                <Data Name="Image">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="FileVersion">-</Data>
+                <Data Name="Description">-</Data>
+                <Data Name="Product">-</Data>
+                <Data Name="Company">-</Data>
+                <Data Name="OriginalFileName">-</Data>
+                <Data Name="CommandLine">lazagne.exe  windows</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=ED2F501408A7A6E1A854C29C4B0BC5648A6AA8612432DF829008931B3E34BF56</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-3402-61af-3801-000000001d00}</Data>
+                <Data Name="ParentProcessId">6068</Data>
+                <Data Name="ParentImage">C:\Windows\SysWOW64\cmd.exe</Data>
+                <Data Name="ParentCommandLine">C:\Windows\system32\cmd.exe</Data>
+        </EventData>
+</Event>
+
+C:\Users\Administrator\Downloads\lazagne.exe
+The instances of ''Data Name = Image'' element in the local tag are  0
+In total,  880 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 885  incidents in total were identified as potentially prone to LM attacks.
+4082 textValues were enumerated in total within this .evtx file.
+There is a  21.680548750612445 % percent possibility of being affected from a Lateral Movement Attack.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.393974"/>
+                <EventRecordID>25639</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.393</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7701-000000001d00}</Data>
+                <Data Name="ProcessId">5204</Data>
+                <Data Name="Image">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="FileVersion">-</Data>
+                <Data Name="Description">-</Data>
+                <Data Name="Product">-</Data>
+                <Data Name="Company">-</Data>
+                <Data Name="OriginalFileName">-</Data>
+                <Data Name="CommandLine">lazagne.exe  windows</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=ED2F501408A7A6E1A854C29C4B0BC5648A6AA8612432DF829008931B3E34BF56</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7601-000000001d00}</Data>
+                <Data Name="ParentProcessId">5048</Data>
+                <Data Name="ParentImage">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="ParentCommandLine">lazagne.exe  windows</Data>
+        </EventData>
+</Event>
+
+lazagne.exe  windows
+The instances of ''Data Name = CommandLine'' element in the local tag are  0
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.393974"/>
+                <EventRecordID>25639</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.393</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7701-000000001d00}</Data>
+                <Data Name="ProcessId">5204</Data>
+                <Data Name="Image">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="FileVersion">-</Data>
+                <Data Name="Description">-</Data>
+                <Data Name="Product">-</Data>
+                <Data Name="Company">-</Data>
+                <Data Name="OriginalFileName">-</Data>
+                <Data Name="CommandLine">lazagne.exe  windows</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=ED2F501408A7A6E1A854C29C4B0BC5648A6AA8612432DF829008931B3E34BF56</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7601-000000001d00}</Data>
+                <Data Name="ParentProcessId">5048</Data>
+                <Data Name="ParentImage">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="ParentCommandLine">lazagne.exe  windows</Data>
+        </EventData>
+</Event>
+
+C:\Users\Administrator\Downloads\lazagne.exe
+The instances of ''Data Name = Image'' element in the local tag are  0
+In total,  880 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 885  incidents in total were identified as potentially prone to LM attacks.
+4084 textValues were enumerated in total within this .evtx file.
+There is a  21.669931439764937 % percent possibility of being affected from a Lateral Movement Attack.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.615219"/>
+                <EventRecordID>25640</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.614</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7801-000000001d00}</Data>
+                <Data Name="ProcessId">6116</Data>
+                <Data Name="Image">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="FileVersion">10.0.17763.592 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Windows Command Processor</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">Cmd.Exe</Data>
+                <Data Name="CommandLine">cmd.exe /c &quot;reg.exe save hklm\security c:\windows\temp\kiqfnbaz&quot;</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=3656F37A1C6951EC4496FABB8EE957D3A6E3C276D5A3785476B482C9C0D32EA2</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7701-000000001d00}</Data>
+                <Data Name="ParentProcessId">5204</Data>
+                <Data Name="ParentImage">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="ParentCommandLine">lazagne.exe  windows</Data>
+        </EventData>
+</Event>
+
+cmd.exe /c "reg.exe save hklm\security c:\windows\temp\kiqfnbaz"
+The instances of ''Data Name = CommandLine'' element in the local tag are  0
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.615219"/>
+                <EventRecordID>25640</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.614</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7801-000000001d00}</Data>
+                <Data Name="ProcessId">6116</Data>
+                <Data Name="Image">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="FileVersion">10.0.17763.592 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Windows Command Processor</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">Cmd.Exe</Data>
+                <Data Name="CommandLine">cmd.exe /c &quot;reg.exe save hklm\security c:\windows\temp\kiqfnbaz&quot;</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=3656F37A1C6951EC4496FABB8EE957D3A6E3C276D5A3785476B482C9C0D32EA2</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7701-000000001d00}</Data>
+                <Data Name="ParentProcessId">5204</Data>
+                <Data Name="ParentImage">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="ParentCommandLine">lazagne.exe  windows</Data>
+        </EventData>
+</Event>
+
+C:\Windows\System32\cmd.exe
+Element found!!!
+1  Lateral Movement events have been found in total!!!
+The instances of ''Data Name = Image'' element in the local tag are  1
+In total,  881 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 886  incidents in total were identified as potentially prone to LM attacks.
+4086 textValues were enumerated in total within this .evtx file.
+There is a  21.683798335780715 % percent possibility of being affected from a Lateral Movement Attack.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.626047"/>
+                <EventRecordID>25641</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.625</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7901-000000001d00}</Data>
+                <Data Name="ProcessId">1632</Data>
+                <Data Name="Image">C:\Windows\System32\reg.exe</Data>
+                <Data Name="FileVersion">10.0.17763.1 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Registry Console Tool</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">reg.exe</Data>
+                <Data Name="CommandLine">reg.exe  save hklm\security c:\windows\temp\kiqfnbaz</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=19316D4266D0B776D9B2A05D5903D8CBC8F0EA1520E9C2A7E6D5960B6FA4DCAF</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7801-000000001d00}</Data>
+                <Data Name="ParentProcessId">6116</Data>
+                <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="ParentCommandLine">cmd.exe /c &quot;reg.exe save hklm\security c:\windows\temp\kiqfnbaz&quot;</Data>
+        </EventData>
+</Event>
+
+reg.exe  save hklm\security c:\windows\temp\kiqfnbaz
+The instances of ''Data Name = CommandLine'' element in the local tag are  0
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.626047"/>
+                <EventRecordID>25641</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.625</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7901-000000001d00}</Data>
+                <Data Name="ProcessId">1632</Data>
+                <Data Name="Image">C:\Windows\System32\reg.exe</Data>
+                <Data Name="FileVersion">10.0.17763.1 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Registry Console Tool</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">reg.exe</Data>
+                <Data Name="CommandLine">reg.exe  save hklm\security c:\windows\temp\kiqfnbaz</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=19316D4266D0B776D9B2A05D5903D8CBC8F0EA1520E9C2A7E6D5960B6FA4DCAF</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7801-000000001d00}</Data>
+                <Data Name="ParentProcessId">6116</Data>
+                <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="ParentCommandLine">cmd.exe /c &quot;reg.exe save hklm\security c:\windows\temp\kiqfnbaz&quot;</Data>
+        </EventData>
+</Event>
+
+C:\Windows\System32\reg.exe
+Element found!!!
+1  Lateral Movement events have been found in total!!!
+The instances of ''Data Name = Image'' element in the local tag are  1
+In total,  882 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 887  incidents in total were identified as potentially prone to LM attacks.
+4088 textValues were enumerated in total within this .evtx file.
+There is a  21.69765166340509 % percent possibility of being affected from a Lateral Movement Attack.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.710871"/>
+                <EventRecordID>25644</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.709</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7a01-000000001d00}</Data>
+                <Data Name="ProcessId">2252</Data>
+                <Data Name="Image">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="FileVersion">10.0.17763.592 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Windows Command Processor</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">Cmd.Exe</Data>
+                <Data Name="CommandLine">cmd.exe /c &quot;reg.exe save hklm\system c:\windows\temp\ajpnoynonpvl&quot;</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=3656F37A1C6951EC4496FABB8EE957D3A6E3C276D5A3785476B482C9C0D32EA2</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7701-000000001d00}</Data>
+                <Data Name="ParentProcessId">5204</Data>
+                <Data Name="ParentImage">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="ParentCommandLine">lazagne.exe  windows</Data>
+        </EventData>
+</Event>
+
+cmd.exe /c "reg.exe save hklm\system c:\windows\temp\ajpnoynonpvl"
+The instances of ''Data Name = CommandLine'' element in the local tag are  0
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.710871"/>
+                <EventRecordID>25644</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.709</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7a01-000000001d00}</Data>
+                <Data Name="ProcessId">2252</Data>
+                <Data Name="Image">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="FileVersion">10.0.17763.592 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Windows Command Processor</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">Cmd.Exe</Data>
+                <Data Name="CommandLine">cmd.exe /c &quot;reg.exe save hklm\system c:\windows\temp\ajpnoynonpvl&quot;</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=3656F37A1C6951EC4496FABB8EE957D3A6E3C276D5A3785476B482C9C0D32EA2</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7701-000000001d00}</Data>
+                <Data Name="ParentProcessId">5204</Data>
+                <Data Name="ParentImage">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="ParentCommandLine">lazagne.exe  windows</Data>
+        </EventData>
+</Event>
+
+C:\Windows\System32\cmd.exe
+Element found!!!
+1  Lateral Movement events have been found in total!!!
+The instances of ''Data Name = Image'' element in the local tag are  1
+In total,  883 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 888  incidents in total were identified as potentially prone to LM attacks.
+4090 textValues were enumerated in total within this .evtx file.
+There is a  21.711491442542787 % percent possibility of being affected from a Lateral Movement Attack.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.721285"/>
+                <EventRecordID>25645</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.720</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7b01-000000001d00}</Data>
+                <Data Name="ProcessId">4100</Data>
+                <Data Name="Image">C:\Windows\System32\reg.exe</Data>
+                <Data Name="FileVersion">10.0.17763.1 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Registry Console Tool</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">reg.exe</Data>
+                <Data Name="CommandLine">reg.exe  save hklm\system c:\windows\temp\ajpnoynonpvl</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=19316D4266D0B776D9B2A05D5903D8CBC8F0EA1520E9C2A7E6D5960B6FA4DCAF</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7a01-000000001d00}</Data>
+                <Data Name="ParentProcessId">2252</Data>
+                <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="ParentCommandLine">cmd.exe /c &quot;reg.exe save hklm\system c:\windows\temp\ajpnoynonpvl&quot;</Data>
+        </EventData>
+</Event>
+
+reg.exe  save hklm\system c:\windows\temp\ajpnoynonpvl
+The instances of ''Data Name = CommandLine'' element in the local tag are  0
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.721285"/>
+                <EventRecordID>25645</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.720</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7b01-000000001d00}</Data>
+                <Data Name="ProcessId">4100</Data>
+                <Data Name="Image">C:\Windows\System32\reg.exe</Data>
+                <Data Name="FileVersion">10.0.17763.1 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Registry Console Tool</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">reg.exe</Data>
+                <Data Name="CommandLine">reg.exe  save hklm\system c:\windows\temp\ajpnoynonpvl</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=19316D4266D0B776D9B2A05D5903D8CBC8F0EA1520E9C2A7E6D5960B6FA4DCAF</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7a01-000000001d00}</Data>
+                <Data Name="ParentProcessId">2252</Data>
+                <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="ParentCommandLine">cmd.exe /c &quot;reg.exe save hklm\system c:\windows\temp\ajpnoynonpvl&quot;</Data>
+        </EventData>
+</Event>
+
+C:\Windows\System32\reg.exe
+Element found!!!
+1  Lateral Movement events have been found in total!!!
+The instances of ''Data Name = Image'' element in the local tag are  1
+In total,  884 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 889  incidents in total were identified as potentially prone to LM attacks.
+4092 textValues were enumerated in total within this .evtx file.
+There is a  21.72531769305963 % percent possibility of being affected from a Lateral Movement Attack.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.867189"/>
+                <EventRecordID>25648</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.866</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7c01-000000001d00}</Data>
+                <Data Name="ProcessId">5820</Data>
+                <Data Name="Image">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="FileVersion">10.0.17763.592 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Windows Command Processor</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">Cmd.Exe</Data>
+                <Data Name="CommandLine">cmd.exe /c &quot;reg.exe save hklm\sam c:\windows\temp\tnaccemjxu&quot;</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=3656F37A1C6951EC4496FABB8EE957D3A6E3C276D5A3785476B482C9C0D32EA2</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7701-000000001d00}</Data>
+                <Data Name="ParentProcessId">5204</Data>
+                <Data Name="ParentImage">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="ParentCommandLine">lazagne.exe  windows</Data>
+        </EventData>
+</Event>
+
+cmd.exe /c "reg.exe save hklm\sam c:\windows\temp\tnaccemjxu"
+The instances of ''Data Name = CommandLine'' element in the local tag are  0
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.867189"/>
+                <EventRecordID>25648</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.866</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7c01-000000001d00}</Data>
+                <Data Name="ProcessId">5820</Data>
+                <Data Name="Image">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="FileVersion">10.0.17763.592 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Windows Command Processor</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">Cmd.Exe</Data>
+                <Data Name="CommandLine">cmd.exe /c &quot;reg.exe save hklm\sam c:\windows\temp\tnaccemjxu&quot;</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=3656F37A1C6951EC4496FABB8EE957D3A6E3C276D5A3785476B482C9C0D32EA2</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7701-000000001d00}</Data>
+                <Data Name="ParentProcessId">5204</Data>
+                <Data Name="ParentImage">C:\Users\Administrator\Downloads\lazagne.exe</Data>
+                <Data Name="ParentCommandLine">lazagne.exe  windows</Data>
+        </EventData>
+</Event>
+
+C:\Windows\System32\cmd.exe
+Element found!!!
+1  Lateral Movement events have been found in total!!!
+The instances of ''Data Name = Image'' element in the local tag are  1
+In total,  885 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 890  incidents in total were identified as potentially prone to LM attacks.
+4094 textValues were enumerated in total within this .evtx file.
+There is a  21.73913043478261 % percent possibility of being affected from a Lateral Movement Attack.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.876041"/>
+                <EventRecordID>25649</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.875</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7d01-000000001d00}</Data>
+                <Data Name="ProcessId">1116</Data>
+                <Data Name="Image">C:\Windows\System32\reg.exe</Data>
+                <Data Name="FileVersion">10.0.17763.1 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Registry Console Tool</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">reg.exe</Data>
+                <Data Name="CommandLine">reg.exe  save hklm\sam c:\windows\temp\tnaccemjxu</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=19316D4266D0B776D9B2A05D5903D8CBC8F0EA1520E9C2A7E6D5960B6FA4DCAF</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7c01-000000001d00}</Data>
+                <Data Name="ParentProcessId">5820</Data>
+                <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="ParentCommandLine">cmd.exe /c &quot;reg.exe save hklm\sam c:\windows\temp\tnaccemjxu&quot;</Data>
+        </EventData>
+</Event>
+
+reg.exe  save hklm\sam c:\windows\temp\tnaccemjxu
+The instances of ''Data Name = CommandLine'' element in the local tag are  0
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:23:43.876041"/>
+                <EventRecordID>25649</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:23:43.875</Data>
+                <Data Name="ProcessGuid">{27532e6a-362f-61af-7d01-000000001d00}</Data>
+                <Data Name="ProcessId">1116</Data>
+                <Data Name="Image">C:\Windows\System32\reg.exe</Data>
+                <Data Name="FileVersion">10.0.17763.1 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Registry Console Tool</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">reg.exe</Data>
+                <Data Name="CommandLine">reg.exe  save hklm\sam c:\windows\temp\tnaccemjxu</Data>
+                <Data Name="CurrentDirectory">C:\Users\Administrator\Downloads\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=19316D4266D0B776D9B2A05D5903D8CBC8F0EA1520E9C2A7E6D5960B6FA4DCAF</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-362f-61af-7c01-000000001d00}</Data>
+                <Data Name="ParentProcessId">5820</Data>
+                <Data Name="ParentImage">C:\Windows\System32\cmd.exe</Data>
+                <Data Name="ParentCommandLine">cmd.exe /c &quot;reg.exe save hklm\sam c:\windows\temp\tnaccemjxu&quot;</Data>
+        </EventData>
+</Event>
+
+C:\Windows\System32\reg.exe
+Element found!!!
+1  Lateral Movement events have been found in total!!!
+The instances of ''Data Name = Image'' element in the local tag are  1
+In total,  886 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 891  incidents in total were identified as potentially prone to LM attacks.
+4096 textValues were enumerated in total within this .evtx file.
+There is a  21.7529296875 % percent possibility of being affected from a Lateral Movement Attack.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:24:35.471334"/>
+                <EventRecordID>25676</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:24:35.470</Data>
+                <Data Name="ProcessGuid">{27532e6a-3663-61af-7e01-000000001d00}</Data>
+                <Data Name="ProcessId">6040</Data>
+                <Data Name="Image">C:\Windows\System32\rundll32.exe</Data>
+                <Data Name="FileVersion">10.0.17763.1 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Windows host process (Rundll32)</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">RUNDLL32.EXE</Data>
+                <Data Name="CommandLine">C:\Windows\system32\rundll32.exe /d acproxy.dll,PerformAutochkOperations</Data>
+                <Data Name="CurrentDirectory">C:\Windows\system32\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=01B407AF0200B66A34D9B1FA6D9EAAB758EFA36A36BB99B554384F59F8690B1A</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-2d00-61af-2c00-000000001d00}</Data>
+                <Data Name="ParentProcessId">496</Data>
+                <Data Name="ParentImage">C:\Windows\System32\svchost.exe</Data>
+                <Data Name="ParentCommandLine">C:\Windows\system32\svchost.exe -k netsvcs -p -s Schedule</Data>
+        </EventData>
+</Event>
+
+C:\Windows\system32\rundll32.exe /d acproxy.dll,PerformAutochkOperations
+The instances of ''Data Name = CommandLine'' element in the local tag are  0
+In total,  5 ''Data Name = CommandLine'' elements were identified.
+<?xml version="1.0" ?>
+<Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
+        <System>
+                <Provider Name="Microsoft-Windows-Sysmon" Guid="{5770385f-c22a-43e0-bf4c-06f5698ffbd9}"/>
+                <EventID Qualifiers="">1</EventID>
+                <Version>5</Version>
+                <Level>4</Level>
+                <Task>1</Task>
+                <Opcode>0</Opcode>
+                <Keywords>0x8000000000000000</Keywords>
+                <TimeCreated SystemTime="2021-12-07 10:24:35.471334"/>
+                <EventRecordID>25676</EventRecordID>
+                <Correlation ActivityID="" RelatedActivityID=""/>
+                <Execution ProcessID="3120" ThreadID="2992"/>
+                <Channel>Microsoft-Windows-Sysmon/Operational</Channel>
+                <Computer>WIN-J23NIGGP1Q6.sysmon_set.local</Computer>
+                <Security UserID="S-1-5-18"/>
+        </System>
+        <EventData>
+                <Data Name="RuleName">-</Data>
+                <Data Name="UtcTime">2021-12-07 10:24:35.470</Data>
+                <Data Name="ProcessGuid">{27532e6a-3663-61af-7e01-000000001d00}</Data>
+                <Data Name="ProcessId">6040</Data>
+                <Data Name="Image">C:\Windows\System32\rundll32.exe</Data>
+                <Data Name="FileVersion">10.0.17763.1 (WinBuild.160101.0800)</Data>
+                <Data Name="Description">Windows host process (Rundll32)</Data>
+                <Data Name="Product">Microsoft® Windows® Operating System</Data>
+                <Data Name="Company">Microsoft Corporation</Data>
+                <Data Name="OriginalFileName">RUNDLL32.EXE</Data>
+                <Data Name="CommandLine">C:\Windows\system32\rundll32.exe /d acproxy.dll,PerformAutochkOperations</Data>
+                <Data Name="CurrentDirectory">C:\Windows\system32\</Data>
+                <Data Name="User">NT AUTHORITY\SYSTEM</Data>
+                <Data Name="LogonGuid">{27532e6a-2ce7-61af-e703-000000000000}</Data>
+                <Data Name="LogonId">0x00000000000003e7</Data>
+                <Data Name="TerminalSessionId">0</Data>
+                <Data Name="IntegrityLevel">System</Data>
+                <Data Name="Hashes">SHA256=01B407AF0200B66A34D9B1FA6D9EAAB758EFA36A36BB99B554384F59F8690B1A</Data>
+                <Data Name="ParentProcessGuid">{27532e6a-2d00-61af-2c00-000000001d00}</Data>
+                <Data Name="ParentProcessId">496</Data>
+                <Data Name="ParentImage">C:\Windows\System32\svchost.exe</Data>
+                <Data Name="ParentCommandLine">C:\Windows\system32\svchost.exe -k netsvcs -p -s Schedule</Data>
+        </EventData>
+</Event>
+
+C:\Windows\System32\rundll32.exe
+The instances of ''Data Name = Image'' element in the local tag are  0
+In total,  886 ''Data Name = Image'' elements were identified.
+ALERT, ALERT, ALERT... 891  incidents in total were identified as potentially prone to LM attacks.
+4098 textValues were enumerated in total within this .evtx file.
+There is a  21.742313323572475 % percent possibility of being affected from a Lateral Movement Attack.
+</EventIDs>
+PS C:\Users\chrsm\Desktop\GitHub Repo\Python_Evtx_Analyzer> 
