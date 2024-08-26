@@ -1,0 +1,63 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red109\green109\blue109;\red32\green32\blue32;\red191\green100\blue38;
+\red153\green168\blue186;\red88\green118\blue71;\red117\green114\blue185;\red86\green132\blue173;}
+{\*\expandedcolortbl;;\csgenericrgb\c42745\c42745\c42745;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c74902\c39216\c14902;
+\csgenericrgb\c60000\c65882\c72941;\csgenericrgb\c34510\c46275\c27843;\csgenericrgb\c45882\c44706\c72549;\csgenericrgb\c33725\c51765\c67843;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 # num-packets-src-dest for .csv frames counting python script\
+# Importing Libraries\
+\cf4 import \cf5 pandas \cf4 as \cf5 pd\
+\cf4 import \cf5 sklearn\
+\cf4 import \cf5 numpy \cf4 as \cf5 np\
+\
+\cf2 # Importing the Dataset\
+# Read data from CSV file into pandas dataframe\
+\
+\cf5 data = pd.read_csv((\
+    \cf6 r"/Users/christossmiliotopoulos/Desktop/myRepos/myPersonal_Git_Record/Python Data Encoding Scripts/customFeatures/num-packets-src-dest/num-packets-src-dest.csv"\cf5 ))\
+data.head()\
+\
+\cf2 # for loop to print dataset's columnName\
+\cf4 for \cf5 (columnName\cf4 , \cf5 columnData) \cf4 in \cf5 data.iteritems():\
+    \cf7 print\cf5 (\cf6 'Column Name : '\cf4 , \cf5 columnName)\
+\
+\cf2 # Function to locate the condition to locate the number of dnsRetrasmPerSec\
+\cf5 valueCounts = data.loc[(data[\cf6 'DS status'\cf5 ] == \cf6 'Frame from DS to a STA via AP(To DS: 0 From DS: 1)'\cf5 )]\
+\cf7 print\cf5 (valueCounts)\
+dsStatus = \cf7 len\cf5 (valueCounts)\
+\cf7 print\cf5 (\cf6 "The number of Frames from DS to a STA via AP(To DS: 0 From DS: 1) .csv file is "\cf4 , \cf5 dsStatus)\
+\
+\cf2 # Count for loop to add a conditional counter towards calculation of the feature dsStatus that will\
+# be used to calculate the custom feature num-packets-src-dest and num-packets-src-dest per second.\
+\
+\cf5 count = \cf8 1\
+\
+\cf4 for \cf5 index\cf4 , \cf5 row \cf4 in \cf5 data.iterrows():\
+    \cf4 if \cf5 row[\cf6 'DS status'\cf5 ] == \cf6 'Frame from DS to a STA via AP(To DS: 0 From DS: 1)'\cf5 :\
+        data.loc[index\cf4 , \cf6 'num-packets-src-dest'\cf5 ] = count\
+        count += \cf8 1\
+    \cf4 else\cf5 :\
+        data.loc[index\cf4 , \cf6 'num-packets-src-dest'\cf5 ] = count -\cf8 1\
+\
+\cf5 data[\cf6 'num-packets-src-dest(Int)'\cf5 ] = data[\cf6 'num-packets-src-dest'\cf5 ].astype(\cf7 int\cf5 )\
+\
+\cf2 # Function that calculates the ssidRepPerSec()\
+\cf5 data[\cf6 'num-packets-src-destPerSec()'\cf5 ] = data[\cf6 'num-packets-src-dest'\cf5 ] / data[\cf6 'Time since reference or first frame'\cf5 ]\
+\
+new1 = data[\cf6 'num-packets-src-destPerSec()'\cf5 ].expanding().std()\
+data[\cf6 'num-packets-src-destPerSecStd'\cf5 ] = new1\
+\
+\cf2 # New numOfUnprotectedPacketsPerSec Dataframe which gathers all the requested information towards the calculation of the\
+# ssidRepPerSec().\
+\cf5 dsStatus= pd.DataFrame(data[\cf6 'DS status'\cf5 ])\
+\cf2 # dsStatus.to_csv((\
+#     r"/Users/christossmiliotopoulos/Desktop/myRepos/myPersonal_Git_Record/Python Data Encoding Scripts/customFeatures/httpReqPerSecStd/httpReqPerSecStd001.csv"), index = False)\
+\cf5 dsStatus[\cf6 'Time since reference or first frame'\cf5 ] = data[\cf6 'Time since reference or first frame'\cf5 ]\
+dsStatus[\cf6 'num-packets-src-dest'\cf5 ] = data[\cf6 'num-packets-src-dest'\cf5 ]\
+dsStatus[\cf6 'num-packets-src-dest(Int)'\cf5 ] = data[\cf6 'num-packets-src-dest(Int)'\cf5 ]\
+dsStatus[\cf6 'num-packets-src-destPerSec()'\cf5 ] = data[\cf6 'num-packets-src-destPerSec()'\cf5 ]\
+dsStatus[\cf6 'num-packets-src-destPerSecStd'\cf5 ] = data[\cf6 'num-packets-src-destPerSecStd'\cf5 ]\
+}

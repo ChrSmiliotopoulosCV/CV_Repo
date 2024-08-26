@@ -1,0 +1,80 @@
+Time since reference or first frame,Flag Retry,Frame length on the wire,Frame Number,Frame Type,Subtype,Simple Service Discovery Protocol
+242.230413,Frame is being retransmitted,283,239061,Data frame,8,1
+242.230545,Frame is being retransmitted,283,239062,Data frame,8,
+242.230639,Frame is being retransmitted,283,239063,Data frame,8,1
+242.281816,Frame is not being retransmitted,559,239169,Data frame,8,1
+242.416282,Frame is not being retransmitted,313,239619,Data frame,8,
+242.488235,Frame is not being retransmitted,273,239934,Data frame,0,
+242.490041,Frame is not being retransmitted,303,239941,Data frame,0,
+245.240691,Frame is not being retransmitted,283,250031,Data frame,8,
+245.252851,Frame is not being retransmitted,273,250165,Data frame,0,
+245.29208,Frame is not being retransmitted,559,250447,Data frame,8,1
+248.294361,Frame is not being retransmitted,559,266712,Data frame,8,1
+248.324463,Frame is not being retransmitted,273,266887,Data frame,0,1
+258.462337,Frame is not being retransmitted,309,330969,Data frame,0,
+259.691004,Frame is not being retransmitted,309,337304,Data frame,0,1
+260.615622,Frame is not being retransmitted,309,344605,Data frame,0,1
+261.561174,Frame is not being retransmitted,319,357718,Data frame,8,1
+261.842105,Frame is not being retransmitted,309,360800,Data frame,0,
+269.735096,Frame is not being retransmitted,319,419087,Data frame,8,
+269.828774,Frame is not being retransmitted,309,419324,Data frame,0,
+270.750396,Frame is not being retransmitted,319,421232,Data frame,8,
+271.058001,Frame is not being retransmitted,309,421984,Data frame,0,1
+271.754229,Frame is not being retransmitted,319,423206,Data frame,8,1
+271.981345,Frame is not being retransmitted,309,425382,Data frame,0,1
+272.752826,Frame is not being retransmitted,319,429059,Data frame,8,1
+272.906073,Frame is not being retransmitted,309,429803,Data frame,0,
+242.230413,Frame is being retransmitted,283,239061,Data frame,8,
+242.230545,Frame is being retransmitted,283,239062,Data frame,8,
+242.230639,Frame is being retransmitted,283,239063,Data frame,8,1
+242.281816,Frame is not being retransmitted,559,239169,Data frame,8,
+242.416282,Frame is not being retransmitted,313,239619,Data frame,8,1
+242.488235,Frame is not being retransmitted,273,239934,Data frame,0,
+242.490041,Frame is not being retransmitted,303,239941,Data frame,0,
+245.240691,Frame is not being retransmitted,283,250031,Data frame,8,1
+245.252851,Frame is not being retransmitted,273,250165,Data frame,0,
+245.29208,Frame is not being retransmitted,559,250447,Data frame,8,1
+248.294361,Frame is not being retransmitted,559,266712,Data frame,8,
+248.324463,Frame is not being retransmitted,273,266887,Data frame,0,1
+258.462337,Frame is not being retransmitted,309,330969,Data frame,0,1
+259.691004,Frame is not being retransmitted,309,337304,Data frame,0,1
+260.615622,Frame is not being retransmitted,309,344605,Data frame,0,1
+261.561174,Frame is not being retransmitted,319,357718,Data frame,8,1
+261.842105,Frame is not being retransmitted,309,360800,Data frame,0,1
+269.735096,Frame is not being retransmitted,319,419087,Data frame,8,
+269.828774,Frame is not being retransmitted,309,419324,Data frame,0,1
+270.750396,Frame is not being retransmitted,319,421232,Data frame,8,
+271.058001,Frame is not being retransmitted,309,421984,Data frame,0,1
+271.754229,Frame is not being retransmitted,319,423206,Data frame,8,
+271.981345,Frame is not being retransmitted,309,425382,Data frame,0,1
+272.752826,Frame is not being retransmitted,319,429059,Data frame,8,
+272.906073,Frame is not being retransmitted,309,429803,Data frame,0,1
+242.230413,Frame is being retransmitted,283,239061,Data frame,8,
+242.230545,Frame is being retransmitted,283,239062,Data frame,8,1
+242.230639,Frame is being retransmitted,283,239063,Data frame,8,
+242.281816,Frame is not being retransmitted,559,239169,Data frame,8,1
+242.416282,Frame is not being retransmitted,313,239619,Data frame,8,1
+242.488235,Frame is not being retransmitted,273,239934,Data frame,0,1
+242.490041,Frame is not being retransmitted,303,239941,Data frame,0,
+245.240691,Frame is not being retransmitted,283,250031,Data frame,8,
+245.252851,Frame is not being retransmitted,273,250165,Data frame,0,
+245.29208,Frame is not being retransmitted,559,250447,Data frame,8,
+248.294361,Frame is not being retransmitted,559,266712,Data frame,8,
+248.324463,Frame is not being retransmitted,273,266887,Data frame,0,1
+258.462337,Frame is not being retransmitted,309,330969,Data frame,0,1
+259.691004,Frame is not being retransmitted,309,337304,Data frame,0,
+260.615622,Frame is not being retransmitted,309,344605,Data frame,0,
+261.561174,Frame is not being retransmitted,319,357718,Data frame,8,
+261.842105,Frame is not being retransmitted,309,360800,Data frame,0,
+269.735096,Frame is not being retransmitted,319,419087,Data frame,8,1
+269.828774,Frame is not being retransmitted,309,419324,Data frame,0,
+270.750396,Frame is not being retransmitted,319,421232,Data frame,8,1
+271.058001,Frame is not being retransmitted,309,421984,Data frame,0,
+271.754229,Frame is not being retransmitted,319,423206,Data frame,8,1
+271.981345,Frame is not being retransmitted,309,425382,Data frame,0,
+272.752826,Frame is not being retransmitted,319,429059,Data frame,8,1
+272.906073,Frame is not being retransmitted,309,429803,Data frame,0,
+242.230413,Frame is being retransmitted,283,239061,Data frame,8,1
+242.230545,Frame is being retransmitted,283,239062,Data frame,8,
+242.230639,Frame is being retransmitted,283,239063,Data frame,8,1
+242.281816,Frame is not being retransmitted,559,239169,Data frame,8,1

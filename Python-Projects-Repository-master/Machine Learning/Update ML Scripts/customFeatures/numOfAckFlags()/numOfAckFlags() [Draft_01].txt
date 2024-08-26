@@ -1,0 +1,61 @@
+# numOfAckFlags() for .csv frames counting python script
+# Importing Libraries
+from idlelib.iomenu import encoding
+
+import pandas as pd
+import sklearn
+import numpy as np
+
+# Importing the Dataset
+# Read data from CSV file into pandas dataframe
+
+data = pd.read_csv((
+    r"D:\Personal Projects\Διδακτορικό\AWID3 Machine Learning Project\Python Data Encoding Scripts\customFeatures\numOfAckFlags()\Krack.csv"), encoding = 'ISO-8859-1')
+data.head()
+
+# for loop to print dataset's columnName
+for (columnName, columnData) in data.iteritems():
+    print('Column Name : ', columnName)
+
+# Function to locate the condition to locate numOfAckFlags() == Set
+valueCounts = data.loc[(data['Acknowledgment Flag'] == 'Set')]
+print(valueCounts)
+# value_counts() function to calculate the number of numOfAckFlags() == Set
+ackFlagFrames = valueCounts['Acknowledgment Flag'].value_counts()
+print(ackFlagFrames)
+numOfAckFlagFrames = len(valueCounts)
+print("The number of Deauth frames in .csv file is ", numOfAckFlagFrames)
+
+# # Count for loop to add a conditional counter towards calculation of the custom feature
+# count = 1
+#
+# for index, row in data.iterrows():
+#     if row['Frame Type'] == 'Management frame':
+#         data.loc[index, 'numOfDeauthFrames'] = count
+#         new1 = data.loc[index, 'Frame length on the wire']
+#         count += 1
+#     else:
+#         data.loc[index, 'numOfDeauthFrames'] = count -1
+#
+# data['numOfDeauthFrames'] = data['numOfDeauthFrames'].astype(int)
+
+# # Statements to calculate the cumsum() of the packet size on the wire and the Average based on the specific row the
+# # data['lenghCumSum()'] and the data['Frame Number']
+# data['lenghCumSum()'] = data['Frame length on the wire'].cumsum()
+# data['avgPacketSize'] = data['lenghCumSum()'] / data['Frame Number']
+# data['avgPacketSizeInt'] = data['avgPacketSize'].astype(int)
+# data['avgPacketSizeInt'] = data['avgPacketSize'].astype(int)
+# data['framesPerSecond'] = data['Frame Number'] / data['Time since reference or first frame']
+
+# numericalCalculations = pd.DataFrame(data['Frame Type'])
+# numericalCalculations['Subtype'] = data['Subtype']
+# numericalCalculations['lenghCumSum()'] = data['lenghCumSum()']
+# numericalCalculations['avgPacketSize'] = data['avgPacketSize']
+# numericalCalculations['avgPacketSizeInt'] = data['avgPacketSizeInt']
+# numericalCalculations['Frame Number'] = data['Frame Number']
+# numericalCalculations['Time since reference or first frame'] = data['Time since reference or first frame']
+# numericalCalculations['framesPerSecond'] = data['framesPerSecond']
+# data.drop('Frame length on the wire', inplace=True, axis=1)
+
+
+

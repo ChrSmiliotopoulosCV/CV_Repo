@@ -1,0 +1,9 @@
+###The command that follows reads the pcap file, filters the pcap file based on the user's selection of generic features, separates the selection with comma and extract the selection to a .csv file with the headers included.###
+
+tshark -r C:\Users\chrsm\Desktop\DeauthSelection.pcap -T fields -E separator=, -E header=y -e wlan.fc.type -e wlan.fc.subtype -e frame.time_delta -e frame.time_relative -e ip.src -e ip.dst -e ip.proto > C:\Users\chrsm\Desktop\DeauthSelection.csv
+
+### tshark command to decode the encrypted wpa2 pcap file and extracted to a new decrypted one.###
+
+tshark -r C:\Users\chrsm\Desktop\DeauthSelection.pcap -o wlan.enable_decryption:TRUE -o "uat:80211_keys:\"wpa-psk\",\" 72b42202a48334093b5fe01fb783d28359c13d10958c86a26aa10b6d85670db8\"" -w C:\Users\chrsm\Desktop\DeauthSelectionDecrypt.pcap
+
+tshark -r C:\Users\chrsm\Desktop\DeauthSelection.pcap -o wlan.enable_decryption:TRUE -w C:\Users\chrsm\Desktop\DeauthSelectionDecrypt.pcap

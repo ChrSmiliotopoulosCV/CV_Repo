@@ -1,0 +1,27 @@
+# BotnetLabelled pcap file, network traffic labelling with Python.
+# Importing Libraries
+import pandas as pd
+import sklearn
+
+# Importing the Dataset
+# Read data from CSV file into pandas dataframe
+
+data = pd.read_csv((r"C:\Users\chrsm\Desktop\csv files\Botnet.csv"), encoding = "ISO-8859-1", low_memory=False)
+data.head()
+
+# for loop to add a conditional label in order to label the dataset's rows based on the conditions as "Botnet" or
+# "normal" traffic
+
+for index, row in data.iterrows():
+    if (1135097 <= row['Frame Number'] <= 3325480) and (row['IPv4 Address'] == '192.168.2.248') \
+            and ((row['IPv4 Address'] == '192.168.2.130') or (row['IPv4 Address'] == '192.168.2.1')
+                 or (row['IPv4 Address'] == '192.168.2.125') or (row['IPv4 Address'] == '192.168.2.42')
+                 or (row['IPv4 Address'] == '192.168.2.184') or (row['IPv4 Address'] == '192.168.2.73')):
+        data.loc[index, 'labelling'] = "Botnet"
+    else:
+        data.loc[index, 'labelling'] = "normal"
+
+data.to_csv(r"C:\Users\chrsm\Desktop\csv files\Botnet_Labelled.csv")
+
+
+
