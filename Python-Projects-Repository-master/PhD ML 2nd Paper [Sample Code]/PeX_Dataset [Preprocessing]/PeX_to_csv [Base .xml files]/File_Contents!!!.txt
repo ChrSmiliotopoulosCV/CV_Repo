@@ -1,0 +1,4 @@
+This folder is consisted of the following files:
+- The "PeX_to_csv [Base .xml files].rar" file which encloses the initially extracted Sysmon logs of the "PeX" logset presented in the "Smiliotopoulos, C.; Barmpatsalou , K.; Kambourakis, G. Revisiting the Detection of Lateral Movement through Sysmon. Appl. Sci. 2022, 12, 7746. https://doi.org/10.3390/app12157746" paper.
+- The "BaseFileForLabeling.rar" file is the fullset of the aforementioned logs in the "PeX_to_csv [Base .xml files].rar" file which emerged from the processing with the newly created for the upcoming paper "ETCExp Tool".
+- The "File Contents.txt" file itself.

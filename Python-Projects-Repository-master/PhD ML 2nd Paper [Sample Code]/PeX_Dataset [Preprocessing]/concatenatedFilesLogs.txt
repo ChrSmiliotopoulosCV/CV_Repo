@@ -1,0 +1,58 @@
+                       Name                                    Guid  EventID  ...                                           Contents                       ID  Label
+0  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        1  ...  [ZoneTransfer]  ZoneId=3  ReferrerUrl=https://...  GetConfigurationOptions      0
+1  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        1  ...                                                NaN                      NaN      0
+2  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+3  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+4  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        4  ...                                                NaN                      NaN      0
+
+[5 rows x 94 columns]
+Name
+The length of concat1 dataframe is:  1036573
+                       Name                                    Guid  EventID  ...                                           Contents                       ID  Label
+0  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        1  ...  [ZoneTransfer]  ZoneId=3  ReferrerUrl=https://...  GetConfigurationOptions      0
+1  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        1  ...                                                NaN                      NaN      0
+2  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+3  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+4  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        4  ...                                                NaN                      NaN      0
+
+[5 rows x 94 columns]
+Name
+The length of concat2 dataframe is:  867672
+                             Name                                    Guid  EventID  ...                                           Contents                       ID  Label
+0        Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        1  ...  [ZoneTransfer]  ZoneId=3  ReferrerUrl=https://...  GetConfigurationOptions      0
+1        Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        1  ...                                                NaN                      NaN      0
+2        Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+3        Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+4        Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        4  ...                                                NaN                      NaN      0
+...                           ...                                     ...      ...  ...                                                ...                      ...    ...
+1904240  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+1904241  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+1904242  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+1904243  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+1904244  Microsoft-Windows-Sysmon  {5770385f-c22a-43e0-bf4c-06f5698ffbd9}        3  ...                                                NaN                      NaN      0
+
+[1904245 rows x 94 columns]
+1904245
+Index(['Name', 'Guid', 'EventID', 'Version', 'Level', 'Task', 'Opcode',
+       'Keywords', 'SystemTime', 'EventRecordID', 'Correlation',
+       'Execution_ProcessID', 'ProcessID', 'ThreadID', 'Channel', 'Computer',
+       'UserID', 'RuleName', 'UtcTime', 'ProcessGuid', 'ProcessId', 'Image',
+       'FileVersion', 'Description', 'Product', 'Company', 'OriginalFileName',
+       'CommandLine', 'CurrentDirectory', 'User', 'LogonGuid', 'LogonId',
+       'TerminalSessionId', 'IntegrityLevel', 'Hashes', 'ParentProcessGuid',
+       'ParentProcessId', 'ParentImage', 'ParentCommandLine', 'ParentUser',
+       'Protocol', 'Initiated', 'SourceIsIpv6', 'SourceIp', 'SourceHostname',
+       'SourcePort', 'SourcePortName', 'DestinationIsIpv6', 'DestinationIp',
+       'DestinationHostname', 'DestinationPort', 'DestinationPortName',
+       'State', 'Version2', 'SchemaVersion', 'Configuration',
+       'ConfigurationFileHash', 'ImageLoaded', 'Signed', 'Signature',
+       'SignatureStatus', 'SourceProcessGUID', 'SourceProcessId',
+       'SourceThreadId', 'SourceImage', 'TargetProcessGUID', 'TargetProcessId',
+       'TargetImage', 'GrantedAccess', 'CallTrace', 'SourceUser', 'TargetUser',
+       'TargetFilename', 'CreationUtcTime', 'EventType', 'TargetObject',
+       'Details', 'PipeName', 'QueryName', 'QueryStatus', 'QueryResults',
+       'IsExecutable', 'Archived', 'SourceProcessGuid', 'TargetProcessGuid',
+       'NewThreadId', 'StartAddress', 'StartModule', 'StartFunction',
+       'PreviousCreationUtcTime', 'Hash', 'Contents', 'ID', 'Label'],
+      dtype='object')
+The new merged dataframe from concat1 and concat2 dataframes has : 94  column names.

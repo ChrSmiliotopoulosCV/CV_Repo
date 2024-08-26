@@ -1,0 +1,21 @@
+This folder is consisted of the following files:
+
+- The "csvCountingFiltering.py" file, which is responsible to produce basic statistical elements regarding the "Malicious" and "Normal" logs of the "fullSetLabeled.csv" dataset upon which the ML experiments will be held.
+
+- The "dataPreProcessing.py" file, that is responsible for the major pre-processing procedures of eliminating Null, NaN or '-' values, separation of the features that will be processed with OHE or MinMax into two different dataframes, extraction of various ".csv" files and finally manipulation of the "SystemTime" feature into seven (7) new equivalent to the original.
+
+- The "dataPreProcessing(MacBook).py" file, is the equivalent of the "dataPreProcessing.py" file for the MacOS file system.
+
+- The "decisionTree.py" file, is a testing sample of running the Decision Tree ML algorithm. It is not the finally used script.
+
+- The "labelling.py" file through which the labeling of the Sysmon logs was held based on the Endpoing Detection and Response Policy of Sysmon in the "Smiliotopoulos, C.; Barmpatsalou , K.; Kambourakis, G. Revisiting the Detection of Lateral Movement through Sysmon. Appl. Sci. 2022, 12, 7746. https://doi.org/10.3390/app12157746" paper.
+
+- The "mergeCSVFiles.py" file which merges the two subsets namely "df3NoNullNoDushedFeaturesLabeled.csv" and "df5NoNullNoDushedTimeFeaturesLabeled.csv" into one and afterwards executing the OHE and MinMax algorithms on the relevant to each algorithm feature.
+
+- The "mergeCSVFiles(MacBook).py" file is the equivalent of the "mergeCSVFiles.py" file for the MacOS file system..
+
+- The "swallowClassifiers.py" file, is the file with all the Swallow Classification Algothms that were executed, the Confusion Matrices and Classification Reports.
+
+- The "xmlProcessingScript.py" file, is the python script file which was created for the purpose of manipulating Stefanias logsets due to major problems in the structure of the file. More precisely, the file had an extra Rendering node which was almost impossible to be handled and it had to be removed in the total of the files.
+
+- The "File Contents.txt" file itself.

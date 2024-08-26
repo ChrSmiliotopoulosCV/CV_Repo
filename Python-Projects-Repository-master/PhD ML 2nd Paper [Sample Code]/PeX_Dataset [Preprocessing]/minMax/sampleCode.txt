@@ -1,0 +1,28 @@
+df['AppointmentDay_year'] = df['AppointmentDay'].dt.year
+df['AppointmentDay_month'] = df['AppointmentDay'].dt.month
+df['AppointmentDay_week'] = df['AppointmentDay'].dt.week
+df['AppointmentDay_day'] = df['AppointmentDay'].dt.day
+df['AppointmentDay_hour'] = df['AppointmentDay'].dt.hour
+df['AppointmentDay_minute'] = df['AppointmentDay'].dt.minute
+df['AppointmentDay_day_of_week'] = df['AppointmentDay'].dt.day_of_week
+
+print(df[['AppointmentDay', 'AppointmentDay_year', 'AppointmentDay_month', 'AppointmentDay_week', 
+'AppointmentDay_day', 'AppointmentDay_hour', 'AppointmentDay_minute', 'AppointmentDay_day_of_week']].head())
+
+print(df.groupby('AppointmentDay_year').size())
+print(df.groupby('AppointmentDay_month').size())
+print(df.groupby('AppointmentDay_week').size())
+print(df.groupby('AppointmentDay_day').size())
+print(df.groupby('AppointmentDay_hour').size())
+print(df.groupby('AppointmentDay_minute').size())
+print(df.groupby('AppointmentDay_day_of_week').size())
+
+plt.hist(df.loc[df.OUTPUT_LABEL == 1,'delta_days'], label = 'Missed',bins = range(0,60,1), normed = True)
+plt.hist(df.loc[df.OUTPUT_LABEL == 0,'delta_days'], label = 'Not Missed',bins = range(0,60,1), normed = True,alpha =0.5)
+plt.legend()
+plt.xlabel('days until appointment')
+plt.ylabel('normed distribution')
+plt.xlim(0,40)
+plt.show()
+
+df['delta_days'] = (df['AppointmentDay'] - df['ScheduledDay']).dt.total_seconds()/(60*60*24)

@@ -1,0 +1,8 @@
+This folder is consisted of the following files:
+- The "fullsetLabeled.csv" file itself, which is the labelled equivalent of the "BaseFileForLabeling.csv" in ".rar" file format that is located within the "Base .csv files" folder. The "fullsetLabeled.csv" file is aparted from a total of 57 features extracted from the originally collected Sysmon .evtx file including the "Label" column.
+- The "selectedRawLabeledFeatures.csv" file enclosed in .rar format, which is the finally collected subset of the "fullsetLabeled.csv" fullset, comprised from 11 features ("EventID", "SystemTime", "EventRecordID", "Execution_ProcessID", "Computer", "UtcTime", "ProcessId", "Initiated", "SourceIsIpv6", "DestinationPortName", "Label"), including the "Label" column. It should be noted that during the pre-processing phase the "SystemTime" feature will be manipulated with the "dataPreProcessing.py" script into seven (7) new features (namely SystemTime\_year, SystemTime\_month, SystemTime\_week, SystemTime\_day, SystemTime\_hour, SystemTime\_minute, SystemTime\_day\_of\_week). Also the "UtcTime" feature will be deleted as irrelevant due to the existence of the aforementioned seven features.
+- The "oheSelectedFeatures.csv" is a draft .csv extracted during the testing of the "mergeCSVFiles.py" regarding the manipulation of the nine (9) features with the OHE algorithm.
+- The "KaggleV2-May-2016.csv" file was downloaded as free from the Internet for testing purposes.
+- The "File Contents.txt" file itself.
+
+

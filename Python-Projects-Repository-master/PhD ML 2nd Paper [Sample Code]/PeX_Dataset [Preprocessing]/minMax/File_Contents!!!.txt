@@ -1,0 +1,6 @@
+This folder is consisted of the following files:
+- The "dateTimeManipulationMLScript.py" file itself. This is the script that was created in guidance with the "Machine Learning with Datetime Feature Engineering: Predicting Healthcare Appointment No-Shows" tutorial (available in the link https://towardsdatascience.com/machine-learning-with-datetime-feature-engineering-predicting-healthcare-appointment-no-shows-5e4ca3a85f96).
+- The "dateTimeManipulationMLScript(MacBook).py" file itself. This is the equivalent to the aforementioned "dateTimeManipulationMLScript.py" MacBook script.
+- The "timeDateNormalization.py" file itself. This is a pre-mature script attempt to manipulate timeDate features via the OHE and MinMax scaler algorithms. It was kept just for record. 
+- The "sampleCode.py" file itself. This junk of code is supplementary to the the previously presented "dateTimeManipulationMLScript.py" and "dateTimeManipulationMLScript(MacBook).py" scripts.
+- The "File Contents.txt" file itself.

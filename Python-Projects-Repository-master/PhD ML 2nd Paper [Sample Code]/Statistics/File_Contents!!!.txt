@@ -1,0 +1,3 @@
+This folder is consisted of the following files:
+- The "statistics.txt" file with the extracted statistics, namely class names and element numbers, total time procedure, null-NaN files, "Normal (0)" and "Malicious (1)" classed counting.
+- The "File Contents.txt" file itself.

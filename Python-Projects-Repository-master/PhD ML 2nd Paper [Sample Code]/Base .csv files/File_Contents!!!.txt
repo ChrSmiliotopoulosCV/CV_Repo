@@ -1,0 +1,4 @@
+This folder is consisted of the following files:
+- The "BaseFileForLabeling.csv" in ".rar" file format. That is the originally extracted with the "evtx\_To\_CSV\_Export Tool (ETCExp)" tool .csv file which will be the basis for the Labelling and Data Pre-Proprocessing procedures and code manipulation. 
+- The "labeledDraft.csv" file which is a small chunk of the original BaseFileForLabeling.csv for code preparation and benchmarking purposes during the developement of the "labelling.py", "mergeCSVFiles.py" and "swallowClassifiers.py" code scripts.
+- The "File Contents.txt" file itself.

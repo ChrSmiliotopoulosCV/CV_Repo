@@ -1,0 +1,3 @@
+This folder is consisted of the following files:
+- The "RBPolicy.txt" file itself, which is the presented in the pre-published "Smiliotopoulos, C.; Barmpatsalou , K.; Kambourakis, G. Revisiting the Detection of Lateral Movement through Sysmon. Appl. Sci. 2022, 12, 7746. https://doi.org/10.3390/app12157746" paper and which will be used as the base criteria withing the "labelling.py" python script for the labelling pre-processing procedure of the "BaseFileForLabeling.csv" file.
+- The "File Contents.txt" file itself.
