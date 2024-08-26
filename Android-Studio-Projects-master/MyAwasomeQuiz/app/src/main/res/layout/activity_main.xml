@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:padding="16dp"
+    tools:context="com.smilio_christos.myawasomequiz.StartingScreenActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:text="My Awesome Quiz"-->
+<!--                android:textColor="@android:color/black"-->
+<!--                android:textSize="35sp" />-->
+
+            <TextView
+                android:id="@+id/text_view_highscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
+                android:textColor="@android:color/white"
+                android:text="Highscore: 0"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/buttonCategory"
+                android:layout_width="323dp"
+                android:layout_height="69dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Entertainment-Leisure" />
+
+            <Button
+                android:id="@+id/buttonCategory1"
+                android:layout_width="323dp"
+                android:layout_height="69dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Geography" />
+
+            <Button
+                android:id="@+id/buttonCategory2"
+                android:layout_width="323dp"
+                android:layout_height="69dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="General Knowledge" />
+
+            <Button
+                android:id="@+id/buttonCategory3"
+                android:layout_width="323dp"
+                android:layout_height="69dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Social - Celebrities" />
+
+            <Button
+                android:id="@+id/buttonCategory4"
+                android:layout_width="323dp"
+                android:layout_height="69dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Sports" />
+
+            <Button
+                android:id="@+id/buttonCategory5"
+                android:layout_width="323dp"
+                android:layout_height="69dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Political" />
+
+            <Button
+                android:id="@+id/buttonCategory6"
+                android:layout_width="323dp"
+                android:layout_height="69dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Science" />
+
+            <Button
+                android:id="@+id/buttonCategory7"
+                android:layout_width="323dp"
+                android:layout_height="69dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="History - Mythology" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/button_start_quiz"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:text="Start Quiz" />-->
+
+
+    <!--    <Spinner-->
+<!--        android:id="@+id/spinner_category"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignStart="@+id/button_start_quiz"-->
+<!--        android:layout_below="@+id/button_start_quiz"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner_difficulty"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignStart="@+id/button_start_quiz"-->
+<!--        android:layout_below="@+id/spinner_category"-->
+<!--        android:layout_marginTop="16dp" />-->
+
+</RelativeLayout>

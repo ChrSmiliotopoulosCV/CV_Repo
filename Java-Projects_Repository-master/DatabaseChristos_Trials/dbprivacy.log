@@ -1,0 +1,771 @@
+2021-01-25 12:22:15.438  WARN 12528 --- [main] g.a.m.d.c.b.ApplicationAutoRunner        : 
+*** MSc Information and Communication Systems Security, Aegean Univ., Fall 2020, DB Security ***
+2021-01-25 12:22:15.438  WARN 12528 --- [main] g.a.m.d.c.b.ApplicationAutoRunner        : 
+Members of the team: 
+- Spyridon Ninos (3232020022)
+- Christos Skatharoudis (3232020025)
+- Margarita Bogdanou (3232020021)
+2021-01-25 12:22:15.438  WARN 12528 --- [main] g.a.m.d.c.b.ApplicationAutoRunner        : 
+Using the dataset from: https://www.kaggle.com/ahsen1330/us-police-shootings
+2021-01-25 12:22:15.438  WARN 12528 --- [main] g.a.m.d.c.b.ApplicationAutoRunner        : 
+Description of the generalization domains used in this program:
+age:
+L0: 0-10, 11-20, 21-30, 31-40, 41-50, 51-60, 61-70, 71-80, 81-90, 91-100, 100+
+L1: 0-30, 31-60, 61-90, 90+
+L2: *
+
+city: 
+L0: (all cities in the dataset)
+L1: (all cities' respective states in the dataset)
+L2: USA
+L3: *
+
+race:
+L0: Asian, Black, Hispanic, Native, Other, White
+L1: North-American
+L2: *
+
+gender:
+L0: M, F
+L1 *
+
+2021-01-25 12:22:15.454  WARN 12528 --- [main] g.a.m.d.c.b.ApplicationAutoRunner        : Loaded 4895 anonymized records (Identifying: name (excluded), QI: race, gender, age, SA: armed, Insensitive: city)
+
+2021-01-25 12:22:15.491  WARN 12528 --- [main] g.a.m.d.c.b.ApplicationAutoRunner        : Found 4724 unique records - 96.51% of the total set
+
+2021-01-25 12:22:15.491  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:15.491  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : === Checking k-anonymity for k = 1 ===
+2021-01-25 12:22:15.491  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:15.491  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 1:
+2021-01-25 12:22:15.507  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L0
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:16.494  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4694 equivalent classes
+2021-01-25 12:22:16.507  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 4521 classes with 1 element, 173 with more than one elements
+2021-01-25 12:22:16.507  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 0.00%
+2021-01-25 12:22:16.507  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It satisfies 1-anonymity
+
+2021-01-25 12:22:16.507  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:16.507  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : === Checking k-anonymity for k = 2 ===
+2021-01-25 12:22:16.507  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:16.507  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 1:
+2021-01-25 12:22:16.507  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L0
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:17.372  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4694 equivalent classes
+2021-01-25 12:22:17.374  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 4521 classes with 1 element, 173 with more than one elements
+2021-01-25 12:22:17.377  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 0.00%
+2021-01-25 12:22:17.377  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 2-anonymity
+
+2021-01-25 12:22:17.378  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:17.378  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 2:
+2021-01-25 12:22:17.378  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:17.384  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:17.974  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 3930 equivalent classes
+2021-01-25 12:22:17.974  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 3403 classes with 1 element, 527 with more than one elements
+2021-01-25 12:22:17.974  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 11.11%
+2021-01-25 12:22:17.974  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 2-anonymity
+
+2021-01-25 12:22:17.982  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:17.982  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 3:
+2021-01-25 12:22:17.982  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:18.127  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:18.215  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 899 equivalent classes
+2021-01-25 12:22:18.215  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 349 classes with 1 element, 550 with more than one elements
+2021-01-25 12:22:18.215  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 22.22%
+2021-01-25 12:22:18.215  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 2-anonymity
+
+2021-01-25 12:22:18.217  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Getting a modified set
+2021-01-25 12:22:18.217  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Unique records size: 349
+2021-01-25 12:22:18.251  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Modified set size: 4546
+2021-01-25 12:22:18.251  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:18.251  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 4:
+2021-01-25 12:22:18.251  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:18.252  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L0
+gender -> *
+
+2021-01-25 12:22:18.324  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 762 equivalent classes
+2021-01-25 12:22:18.325  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 249 classes with 1 element, 513 with more than one elements
+2021-01-25 12:22:18.325  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 33.33%
+2021-01-25 12:22:18.325  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 2-anonymity
+
+2021-01-25 12:22:18.325  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:18.325  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 5:
+2021-01-25 12:22:18.325  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:18.326  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L1
+gender -> *
+
+2021-01-25 12:22:18.355  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 316 equivalent classes
+2021-01-25 12:22:18.357  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 45 classes with 1 element, 271 with more than one elements
+2021-01-25 12:22:18.357  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 44.44%
+2021-01-25 12:22:18.357  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 2-anonymity
+
+2021-01-25 12:22:18.357  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:18.357  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 6:
+2021-01-25 12:22:18.357  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:18.365  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L1
+race -> L1
+gender -> *
+
+2021-01-25 12:22:18.382  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 148 equivalent classes
+2021-01-25 12:22:18.383  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 13 classes with 1 element, 135 with more than one elements
+2021-01-25 12:22:18.383  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 55.56%
+2021-01-25 12:22:18.383  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 2-anonymity
+
+2021-01-25 12:22:18.383  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:18.383  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 7:
+2021-01-25 12:22:18.383  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:18.384  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L2
+race -> L1
+gender -> *
+
+2021-01-25 12:22:18.386  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4 equivalent classes
+2021-01-25 12:22:18.387  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 1 classes with 1 element, 3 with more than one elements
+2021-01-25 12:22:18.387  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 66.67%
+2021-01-25 12:22:18.387  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 2-anonymity
+
+2021-01-25 12:22:18.387  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:18.387  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 8:
+2021-01-25 12:22:18.387  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:18.388  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L2
+race -> *
+gender -> *
+
+2021-01-25 12:22:18.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4 equivalent classes
+2021-01-25 12:22:18.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 1 classes with 1 element, 3 with more than one elements
+2021-01-25 12:22:18.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 77.78%
+2021-01-25 12:22:18.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 2-anonymity
+
+2021-01-25 12:22:18.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:18.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 9:
+2021-01-25 12:22:18.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:18.392  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> *
+city -> L2
+race -> *
+gender -> *
+
+2021-01-25 12:22:18.394  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 1 equivalent classes
+2021-01-25 12:22:18.394  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 0 classes with 1 element, 1 with more than one elements
+2021-01-25 12:22:18.394  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 88.89%
+2021-01-25 12:22:18.395  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It satisfies 2-anonymity
+
+2021-01-25 12:22:18.395  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:18.395  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : === Checking k-anonymity for k = 3 ===
+2021-01-25 12:22:18.395  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:18.395  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 1:
+2021-01-25 12:22:18.395  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L0
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:19.137  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4694 equivalent classes
+2021-01-25 12:22:19.138  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 4521 classes with 1 element, 173 with more than one elements
+2021-01-25 12:22:19.138  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 0.00%
+2021-01-25 12:22:19.138  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 3-anonymity
+
+2021-01-25 12:22:19.138  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:19.138  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 2:
+2021-01-25 12:22:19.138  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:19.140  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:19.728  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 3930 equivalent classes
+2021-01-25 12:22:19.731  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 3403 classes with 1 element, 527 with more than one elements
+2021-01-25 12:22:19.731  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 11.11%
+2021-01-25 12:22:19.731  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 3-anonymity
+
+2021-01-25 12:22:19.732  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:19.732  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 3:
+2021-01-25 12:22:19.732  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:19.892  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:19.974  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 899 equivalent classes
+2021-01-25 12:22:19.974  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 349 classes with 1 element, 550 with more than one elements
+2021-01-25 12:22:19.974  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 22.22%
+2021-01-25 12:22:19.974  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 3-anonymity
+
+2021-01-25 12:22:19.974  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Getting a modified set
+2021-01-25 12:22:19.974  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Unique records size: 349
+2021-01-25 12:22:20.005  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Modified set size: 4546
+2021-01-25 12:22:20.005  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:20.005  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 4:
+2021-01-25 12:22:20.005  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:20.005  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L0
+gender -> *
+
+2021-01-25 12:22:20.066  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 762 equivalent classes
+2021-01-25 12:22:20.066  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 249 classes with 1 element, 513 with more than one elements
+2021-01-25 12:22:20.066  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 33.33%
+2021-01-25 12:22:20.066  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 3-anonymity
+
+2021-01-25 12:22:20.066  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:20.066  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 5:
+2021-01-25 12:22:20.066  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:20.066  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L1
+gender -> *
+
+2021-01-25 12:22:20.110  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 316 equivalent classes
+2021-01-25 12:22:20.110  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 45 classes with 1 element, 271 with more than one elements
+2021-01-25 12:22:20.110  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 44.44%
+2021-01-25 12:22:20.110  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 3-anonymity
+
+2021-01-25 12:22:20.110  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:20.110  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 6:
+2021-01-25 12:22:20.110  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:20.110  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L1
+race -> L1
+gender -> *
+
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 148 equivalent classes
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 13 classes with 1 element, 135 with more than one elements
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 55.56%
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 3-anonymity
+
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 7:
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L2
+race -> L1
+gender -> *
+
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4 equivalent classes
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 1 classes with 1 element, 3 with more than one elements
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 66.67%
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 3-anonymity
+
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 8:
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L2
+race -> *
+gender -> *
+
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4 equivalent classes
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 1 classes with 1 element, 3 with more than one elements
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 77.78%
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 3-anonymity
+
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 9:
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> *
+city -> L2
+race -> *
+gender -> *
+
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 1 equivalent classes
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 0 classes with 1 element, 1 with more than one elements
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 88.89%
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It satisfies 3-anonymity
+
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : === Checking k-anonymity for k = 4 ===
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 1:
+2021-01-25 12:22:20.125  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L0
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:20.873  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4694 equivalent classes
+2021-01-25 12:22:20.873  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 4521 classes with 1 element, 173 with more than one elements
+2021-01-25 12:22:20.874  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 0.00%
+2021-01-25 12:22:20.874  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 4-anonymity
+
+2021-01-25 12:22:20.874  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:20.874  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 2:
+2021-01-25 12:22:20.874  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:20.874  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:21.486  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 3930 equivalent classes
+2021-01-25 12:22:21.486  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 3403 classes with 1 element, 527 with more than one elements
+2021-01-25 12:22:21.486  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 11.11%
+2021-01-25 12:22:21.486  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 4-anonymity
+
+2021-01-25 12:22:21.486  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:21.486  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 3:
+2021-01-25 12:22:21.486  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:21.657  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:21.749  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 899 equivalent classes
+2021-01-25 12:22:21.749  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 349 classes with 1 element, 550 with more than one elements
+2021-01-25 12:22:21.749  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 22.22%
+2021-01-25 12:22:21.749  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 4-anonymity
+
+2021-01-25 12:22:21.749  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Getting a modified set
+2021-01-25 12:22:21.749  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Unique records size: 349
+2021-01-25 12:22:21.779  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Modified set size: 4546
+2021-01-25 12:22:21.787  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:21.787  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 4:
+2021-01-25 12:22:21.787  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:21.787  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L0
+gender -> *
+
+2021-01-25 12:22:21.859  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 762 equivalent classes
+2021-01-25 12:22:21.859  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 249 classes with 1 element, 513 with more than one elements
+2021-01-25 12:22:21.859  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 33.33%
+2021-01-25 12:22:21.859  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 4-anonymity
+
+2021-01-25 12:22:21.859  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:21.859  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 5:
+2021-01-25 12:22:21.859  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:21.859  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L1
+gender -> *
+
+2021-01-25 12:22:21.889  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 316 equivalent classes
+2021-01-25 12:22:21.889  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 45 classes with 1 element, 271 with more than one elements
+2021-01-25 12:22:21.889  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 44.44%
+2021-01-25 12:22:21.889  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 4-anonymity
+
+2021-01-25 12:22:21.889  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:21.889  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 6:
+2021-01-25 12:22:21.889  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:21.889  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L1
+race -> L1
+gender -> *
+
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 148 equivalent classes
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 13 classes with 1 element, 135 with more than one elements
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 55.56%
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 4-anonymity
+
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 7:
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L2
+race -> L1
+gender -> *
+
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4 equivalent classes
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 1 classes with 1 element, 3 with more than one elements
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 66.67%
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 4-anonymity
+
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 8:
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:21.909  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L2
+race -> *
+gender -> *
+
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4 equivalent classes
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 1 classes with 1 element, 3 with more than one elements
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 77.78%
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 4-anonymity
+
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 9:
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> *
+city -> L2
+race -> *
+gender -> *
+
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 1 equivalent classes
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 0 classes with 1 element, 1 with more than one elements
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 88.89%
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It satisfies 4-anonymity
+
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : === Checking k-anonymity for k = 5 ===
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 1:
+2021-01-25 12:22:21.920  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L0
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:22.694  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4694 equivalent classes
+2021-01-25 12:22:22.694  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 4521 classes with 1 element, 173 with more than one elements
+2021-01-25 12:22:22.695  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 0.00%
+2021-01-25 12:22:22.695  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 5-anonymity
+
+2021-01-25 12:22:22.695  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:22.695  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 2:
+2021-01-25 12:22:22.695  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:22.695  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:23.294  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 3930 equivalent classes
+2021-01-25 12:22:23.294  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 3403 classes with 1 element, 527 with more than one elements
+2021-01-25 12:22:23.294  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 11.11%
+2021-01-25 12:22:23.294  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 5-anonymity
+
+2021-01-25 12:22:23.294  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:23.294  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 3:
+2021-01-25 12:22:23.294  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:23.457  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:23.548  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 899 equivalent classes
+2021-01-25 12:22:23.548  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 349 classes with 1 element, 550 with more than one elements
+2021-01-25 12:22:23.548  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 22.22%
+2021-01-25 12:22:23.548  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 5-anonymity
+
+2021-01-25 12:22:23.548  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Getting a modified set
+2021-01-25 12:22:23.548  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Unique records size: 349
+2021-01-25 12:22:23.579  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Modified set size: 4546
+2021-01-25 12:22:23.579  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:23.579  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 4:
+2021-01-25 12:22:23.579  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:23.579  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L0
+gender -> *
+
+2021-01-25 12:22:23.650  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 762 equivalent classes
+2021-01-25 12:22:23.650  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 249 classes with 1 element, 513 with more than one elements
+2021-01-25 12:22:23.650  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 33.33%
+2021-01-25 12:22:23.650  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 5-anonymity
+
+2021-01-25 12:22:23.650  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:23.650  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 5:
+2021-01-25 12:22:23.650  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:23.650  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L1
+gender -> *
+
+2021-01-25 12:22:23.681  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 316 equivalent classes
+2021-01-25 12:22:23.681  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 45 classes with 1 element, 271 with more than one elements
+2021-01-25 12:22:23.681  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 44.44%
+2021-01-25 12:22:23.681  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 5-anonymity
+
+2021-01-25 12:22:23.681  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:23.681  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 6:
+2021-01-25 12:22:23.681  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:23.689  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L1
+race -> L1
+gender -> *
+
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 148 equivalent classes
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 13 classes with 1 element, 135 with more than one elements
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 55.56%
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 5-anonymity
+
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 7:
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L2
+race -> L1
+gender -> *
+
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4 equivalent classes
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 1 classes with 1 element, 3 with more than one elements
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 66.67%
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 5-anonymity
+
+2021-01-25 12:22:23.701  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 8:
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L2
+race -> *
+gender -> *
+
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4 equivalent classes
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 1 classes with 1 element, 3 with more than one elements
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 77.78%
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 5-anonymity
+
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 9:
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> *
+city -> L2
+race -> *
+gender -> *
+
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 1 equivalent classes
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 0 classes with 1 element, 1 with more than one elements
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 88.89%
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It satisfies 5-anonymity
+
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : === Checking k-anonymity for k = 6 ===
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 1:
+2021-01-25 12:22:23.709  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L0
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:24.470  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4694 equivalent classes
+2021-01-25 12:22:24.470  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 4521 classes with 1 element, 173 with more than one elements
+2021-01-25 12:22:24.470  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 0.00%
+2021-01-25 12:22:24.470  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 6-anonymity
+
+2021-01-25 12:22:24.470  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:24.470  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 2:
+2021-01-25 12:22:24.470  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:24.471  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:25.049  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 3930 equivalent classes
+2021-01-25 12:22:25.051  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 3403 classes with 1 element, 527 with more than one elements
+2021-01-25 12:22:25.052  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 11.11%
+2021-01-25 12:22:25.052  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 6-anonymity
+
+2021-01-25 12:22:25.054  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:25.054  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 3:
+2021-01-25 12:22:25.054  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:25.208  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:25.288  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 899 equivalent classes
+2021-01-25 12:22:25.288  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 349 classes with 1 element, 550 with more than one elements
+2021-01-25 12:22:25.288  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 22.22%
+2021-01-25 12:22:25.290  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 6-anonymity
+
+2021-01-25 12:22:25.290  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Getting a modified set
+2021-01-25 12:22:25.290  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Unique records size: 349
+2021-01-25 12:22:25.320  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Modified set size: 4546
+2021-01-25 12:22:25.320  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:25.320  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 4:
+2021-01-25 12:22:25.320  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:25.320  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L0
+gender -> *
+
+2021-01-25 12:22:25.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 762 equivalent classes
+2021-01-25 12:22:25.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 249 classes with 1 element, 513 with more than one elements
+2021-01-25 12:22:25.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 33.33%
+2021-01-25 12:22:25.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 6-anonymity
+
+2021-01-25 12:22:25.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:25.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 5:
+2021-01-25 12:22:25.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:25.391  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L1
+race -> L1
+gender -> *
+
+2021-01-25 12:22:25.421  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 316 equivalent classes
+2021-01-25 12:22:25.421  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 45 classes with 1 element, 271 with more than one elements
+2021-01-25 12:22:25.421  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 44.44%
+2021-01-25 12:22:25.421  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 6-anonymity
+
+2021-01-25 12:22:25.421  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:25.421  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 6:
+2021-01-25 12:22:25.421  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:25.421  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L1
+race -> L1
+gender -> *
+
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 148 equivalent classes
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 13 classes with 1 element, 135 with more than one elements
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 55.56%
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 6-anonymity
+
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 7:
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L2
+race -> L1
+gender -> *
+
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4 equivalent classes
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 1 classes with 1 element, 3 with more than one elements
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 66.67%
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 6-anonymity
+
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 8:
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L2
+city -> L2
+race -> *
+gender -> *
+
+2021-01-25 12:22:25.440  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4 equivalent classes
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 1 classes with 1 element, 3 with more than one elements
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 77.78%
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 6-anonymity
+
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 9:
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> *
+city -> L2
+race -> *
+gender -> *
+
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 1 equivalent classes
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 0 classes with 1 element, 1 with more than one elements
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 88.89%
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It satisfies 6-anonymity
+
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : === Checking k-anonymity for k = 7 ===
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 1:
+2021-01-25 12:22:25.450  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L0
+city -> L0
+race -> L0
+gender -> L0
+
+2021-01-25 12:22:26.202  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Dataset split to 4694 equivalent classes
+2021-01-25 12:22:26.202  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 4521 classes with 1 element, 173 with more than one elements
+2021-01-25 12:22:26.202  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Current information loss: 0.00%
+2021-01-25 12:22:26.202  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : 
+It does not satisfy 7-anonymity
+
+2021-01-25 12:22:26.202  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : ======================================
+2021-01-25 12:22:26.202  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Round 2:
+2021-01-25 12:22:26.202  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalizing the dataset
+2021-01-25 12:22:26.203  WARN 12528 --- [main] g.a.m.d.core.business.KAnonymity         : Generalization levels:
+age -> L1
+city -> L0
+race -> L0
+gender -> L0
+

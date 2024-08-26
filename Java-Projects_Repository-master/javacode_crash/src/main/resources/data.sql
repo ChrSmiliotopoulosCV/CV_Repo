@@ -1,0 +1,1 @@
+INSERT INTO arrests SELECT * FROM CSVREAD('classpath:BPD_Arrests.csv');

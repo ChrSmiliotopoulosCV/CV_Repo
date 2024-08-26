@@ -1,0 +1,33 @@
+logging:
+  config: classpath:logback-spring.xml
+  file:
+    name: db.log
+
+spring:
+  main:
+    banner-mode: off
+  datasource:
+    schema: classpath:schema.sql
+    data: classpath:data.sql
+    url: jdbc:h2:mem:arrests_db
+    driver-class-name: org.h2.Driver
+
+sql:
+  queries:
+    countRecords: >-
+      SELECT
+        count(*)
+      FROM
+        arrests
+
+    getAnonymizedRecords: >-
+      SELECT
+        arrest,
+        race,
+        district,
+        sex,
+        age,
+        arrest_date,
+        charge_description
+      FROM
+        arrests
