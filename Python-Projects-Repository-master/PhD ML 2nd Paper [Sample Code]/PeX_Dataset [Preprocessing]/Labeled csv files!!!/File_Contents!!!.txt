@@ -1,8 +1,0 @@
-This folder is consisted of the following files:
-- The "csv_PeX_Files [fullLabeled + Limited Versions].rar" file. This is a repo with both the fullLabeled and limitedLabeled datasets and subsets.
-- The "csv_PeX_Files [fullLabeled].rar" file. This is a repo that is comprised from the fullLabeled datasets and subsets.
-- The "fullsetLabeled.rar" file. This is a repo that is comprised from the "fullLabeled.csv" dataset.
-- The "limitedLabeled.csv files.rar" file. The "csv_PeX_Files [fullLabeled].rar" file. This is a repo that is comprised from the limitedLabeled datasets and subsets.
-- The "maliciousSubsetLabeled.rar" file. This is a repo that is comprised from the "maliciousSubsetLabeled.csv" dataset.
-- The "normalSubsetLabeled.rar" file. This is a repo that is comprised from the "normalSubsetLabeled.csv" dataset.
-- The "File Contents.txt" file itself.

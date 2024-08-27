@@ -1,4 +1,0 @@
-This folder is consisted of the following files:
-- The "ohe_sklearn.py" file which is a tutorial script exploring the "melb_data.csv" sample free online dataset through the main topics of One Hot Encoding algorithmic transfromation of data with sklearn framework.
-- The "ohe_pandas.py" python script also explores the One Hot Encoding algorithmic transfromation of data through the wellknown Pandas python library.
-- The "File Contents.txt" file itself.
