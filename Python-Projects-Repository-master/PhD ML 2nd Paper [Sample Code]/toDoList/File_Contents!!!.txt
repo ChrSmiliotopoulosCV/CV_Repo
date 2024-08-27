@@ -1,3 +1,0 @@
-This folder is consisted of the following files:
-- The "toDoList.txt" file itself, which is a continuously updated list with the main goals and milestones of the paper in progress.
-- The "File Contents.txt" file itself.
